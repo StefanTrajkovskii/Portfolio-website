@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Stefan Trajkovski</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#F8F7F1]">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-[#F8F7F1] shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-2xl font-bold text-teal-700 font-poppins">Stefan Trajkovski</div>
+                <div class="hidden md:flex space-x-20 font-poppins">
+                    <a href="home.html" class="text-gray-600 hover:text-gray-900 relative group text-lg">
+                        Home
+                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 group-hover:w-1/2 transition-all duration-300 origin-center"></span>
+                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 group-hover:w-1/2 transition-all duration-300 origin-center"></span>
+                    </a>
+                    <a href="contact.html" class="text-gray-600 hover:text-gray-900 relative group text-lg">
+                        Services
+                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 group-hover:w-1/2 transition-all duration-300 origin-center"></span>
+                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 group-hover:w-1/2 transition-all duration-300 origin-center"></span>
+                    </a>
+                    <a href="projects.html" class="text-gray-600 relative group text-lg">
+                        Projects
+                        <span class="absolute bottom-0 left-0 w-full h-0.5 bg-teal-600"></span>
+                    </a>
+                    <a href="contact.html" class="text-gray-600 hover:text-gray-900 relative group text-lg">
+                        Contact
+                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 group-hover:w-1/2 transition-all duration-300 origin-center"></span>
+                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 group-hover:w-1/2 transition-all duration-300 origin-center"></span>
+                    </a>
+                </div>
+                <button class="bg-teal-600 text-white px-6 py-2 rounded-md hover:bg-teal-700 font-poppins">
+                    <a href="assets/cv/Stefan_Trajkovski_CV.pdf" download class="inline-block w-full h-full">Download CV</a>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Projects Section -->
+    <main class="pt-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <h1 class="text-4xl font-bold text-gray-800 mb-4">My Projects</h1>
+                <p class="text-xl text-gray-600">A collection of my recent work and contributions</p>
+            </div>
+
+            <!-- Project Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1 -->
+                <div class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/projects/project1.jpg" alt="E-commerce Platform" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <a href="/assets/projects/project1.html" class="bg-teal-600 text-white px-6 py-2 rounded-md hover:bg-teal-700">View Project</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">E-commerce Platform</h3>
+                        <p class="text-gray-600 mb-4">A full-stack e-commerce platform built with React and Node.js</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">React</span>
+                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">Node.js</span>
+                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/projects/project2.jpg" alt="Task Management App" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <a href="/assets/projects/project2.html" class="bg-teal-600 text-white px-6 py-2 rounded-md hover:bg-teal-700">View Project</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Task Management App</h3>
+                        <p class="text-gray-600 mb-4">A collaborative task management application with real-time updates</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">Vue.js</span>
+                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">Firebase</span>
+                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/projects/project3.jpg" alt="AI Chat Application" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <a href="/assets/projects/project3.html" class="bg-teal-600 text-white px-6 py-2 rounded-md hover:bg-teal-700">View Project</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">AI Chat Application</h3>
+                        <p class="text-gray-600 mb-4">An intelligent chatbot powered by machine learning algorithms</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">Python</span>
+                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">TensorFlow</span>
+                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">Flask</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/projects/project4.jpg" alt="Fitness Tracking App" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <a href="/assets/projects/project4.html" class="bg-teal-600 text-white px-6 py-2 rounded-md hover:bg-teal-700">View Project</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Fitness Tracking App</h3>
+                        <p class="text-gray-600 mb-4">A mobile app for tracking workouts and nutrition with data visualization</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">React Native</span>
+                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">GraphQL</span>
+                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">AWS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 5 -->
+                <div class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/projects/project5.jpg" alt="Weather Dashboard" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <a href="/assets/projects/project5.html" class="bg-teal-600 text-white px-6 py-2 rounded-md hover:bg-teal-700">View Project</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Weather Dashboard</h3>
+                        <p class="text-gray-600 mb-4">A weather forecasting application with interactive maps and charts</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">JavaScript</span>
+                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">D3.js</span>
+                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">OpenWeather API</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 6 -->
+                <div class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                    <div class="relative overflow-hidden">
+                        <img src="assets/projects/project6.jpg" alt="Social Media Dashboard" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                            <a href="/assets/projects/project6.html" class="bg-teal-600 text-white px-6 py-2 rounded-md hover:bg-teal-700">View Project</a>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Social Media Dashboard</h3>
+                        <p class="text-gray-600 mb-4">Analytics dashboard for social media management and monitoring</p>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">Angular</span>
+                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">Express.js</span>
+                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
