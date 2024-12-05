@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'bubblegum': ['"Bubblegum Sans"', 'cursive'],
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+    <script src="js/main.js" defer></script>
+</head>
+<body class="bg-[#F8F7F1] overflow-y-hidden">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-white shadow-sm z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="text-2xl font-bold text-teal-700 font-poppins">Stefan Trajkovski</div>
+                <div class="hidden md:flex space-x-16 font-poppins">
+                    <a href="#" class="text-gray-700 hover:duration-[0.3s] hover:text-teal-600">Home</a>
+                    <a href="#services" class="text-gray-700 hover:duration-[0.3s] hover:text-teal-600">Services</a>
+                    <a href="#projects" class="text-gray-700 hover:duration-[0.3s] hover:text-teal-600">Projects</a>
+                    <a href="#" class="text-gray-700 hover:duration-[0.3s] hover:text-teal-600">Contact</a>
+                </div>
+                <button class="bg-teal-600 text-white px-6 py-2 rounded-md hover:bg-teal-700 font-poppins">
+                    Download CV
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <main class="pt-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative">
+            <!-- Text content positioned absolutely -->
+            <div class="absolute top-32 left-8 z-10">
+                <div class="max-w-lg">
+                    <h2 class="text-4xl font-bubblegum mb-2">Hi! I Am</h2>
+                    <h1 class="text-4xl font-bold text-amber-400 mb-4 font-poppins">Stefan Trajkovski</h1>
+                </div>
+            </div>
+
+            <!-- Experience and social links -->
+            <div class="absolute top-[500px] left-8 z-10">
+                <div class="max-w-lg">
+                    <div class="mb-12 font-poppins flex gap-4">
+                        <div class="text-4xl font-bold text-teal-700 pt-2">01</div>
+                        <div class="text-gray-600 text-lg">YEARS<br/>EXPERIENCE</div>
+                    </div>
+
+                    <div class="flex space-x-6 mt-[70px]">
+                        <a href="#" class="text-gray-600 hover:text-amber-400">
+                            <div class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
+                                <img src="assets/svg/social/facebook.svg" alt="Facebook" class="w-6 h-6">
+                            </div>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-amber-400">
+                            <div class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
+                                <img src="assets/svg/social/instagram.svg" alt="Instagram" class="w-6 h-6">
+                            </div>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-amber-400">
+                            <div class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
+                                <img src="assets/svg/social/twitter.svg" alt="Twitter" class="w-6 h-6">
+                            </div>
+                        </a>
+                        <a href="#" class="text-gray-600 hover:text-amber-400">
+                            <div class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center">
+                                <img src="assets/svg/social/linkedin.svg" alt="LinkedIn" class="w-6 h-6">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute left-[150px] top-[200px] z-0">
+                <img src="assets/svg/decorative.svg" alt="Decorative Path" width="456" height="205">
+            </div>
+
+            <!-- Centered image -->
+            <div class="flex justify-center items-center min-h-[calc(100vh-4rem)]">
+                <div class="relative">
+                    <div class="w-[500px] h-[500px] bg-gray-200 rounded-full flex items-center justify-center text-gray-400">
+                        500x500
+                    </div>
+                    
+                    <!-- Reviews Box -->
+                    <div class="absolute top-[120px] right-[-340px] bg-white p-4 rounded-lg shadow-lg">
+                        <div class="flex items-center gap-2">
+                            <p class="text-base font-medium text-left text-[#0d2f3f]">12k Reviews On</p>
+                            <div class="flex text-yellow-400 text-2xl">
+                                ★★★★★
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex mt-2 space-x-1">
+                                <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-xs">
+                                    img
+                                </div>
+                                <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-xs">
+                                    img
+                                </div>
+                                <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-xs">
+                                    img
+                                </div>
+                                <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-xs">
+                                    img
+                                </div>
+                            </div>
+                            <div class="text-l font-bold text-teal-700 mt-[12px]">4.9</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="absolute top-0 mt-[600px] right-8 text-right">
+                <h2 class="text-4xl font-bold text-gray-800">Software</h2>
+                <h3 class="text-2xl text-teal-600">Engineer</h3>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
