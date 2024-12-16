@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Stefan Trajkovski</title>
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="tailwind.config.js"></script>
+    <script src="js/main.js" defer></script>
     <style>
         body {
             font-family: 'Poppins', sans-serif;
@@ -18,9 +20,9 @@
     <nav class="fixed w-full bg-[#F8F7F1] shadow-sm z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <div class="text-2xl font-bold text-teal-700 font-poppins">Stefan Trajkovski</div>
+                <div class="text-xl sm:text-2xl md:text-3xl font-bold text-teal-700 font-poppins">Stefan Trajkovski</div>
                 <div class="hidden md:flex space-x-20 font-poppins">
-                    <a href="home.html" class="text-gray-600 hover:text-gray-900 relative group text-lg">
+                    <a href="home.html" class="text-gray-600 relative group text-lg">
                         Home
                         <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 group-hover:w-1/2 transition-all duration-300 origin-center"></span>
                         <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 group-hover:w-1/2 transition-all duration-300 origin-center"></span>
@@ -30,7 +32,7 @@
                         <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 group-hover:w-1/2 transition-all duration-300 origin-center"></span>
                         <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 group-hover:w-1/2 transition-all duration-300 origin-center"></span>
                     </a>
-                    <a href="projects.html" class="text-gray-600 relative group text-lg">
+                    <a href="projects.html" class="text-gray-600 hover:text-gray-900 relative group text-lg">
                         Projects
                         <span class="absolute bottom-0 left-0 w-full h-0.5 bg-teal-600"></span>
                     </a>
@@ -40,9 +42,30 @@
                         <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 group-hover:w-1/2 transition-all duration-300 origin-center"></span>
                     </a>
                 </div>
-                <button class="bg-teal-600 text-white px-6 py-2 rounded-md hover:bg-teal-700 font-poppins">
-                    <a href="assets/cv/Stefan_Trajkovski_CV.pdf" download class="inline-block w-full h-full">Download CV</a>
-                </button>
+                <div class="flex items-center space-x-4">
+                    <button class="bg-teal-600 text-white px-4 py-1.5 text-sm rounded-md hover:bg-teal-700 font-poppins hidden md:block">
+                        <a href="assets/cv/Stefan_Trajkovski_CV.pdf" download class="inline-block w-full h-full">Download CV</a>
+                    </button>
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-900 focus:outline-none md:hidden">
+                        <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden transform transition-all duration-300 ease-in-out opacity-0 scale-95 bg-[#F8F7F1] shadow-lg absolute w-full">
+            <div class="px-2 pt-2 pb-3 space-y-3 flex flex-col items-center">
+                <a href="home.html" class="block px-3 py-2 text-gray-600 font-medium hover:text-gray-900 text-center w-full">Home</a>
+                <a href="services.html" class="block px-3 py-2 text-gray-600 font-medium hover:text-gray-900 text-center w-full">Services</a>
+                <a href="projects.html" class="block px-3 py-2 text-gray-600 font-medium hover:text-gray-900 text-center w-full">Projects</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-600 font-medium hover:text-gray-900 text-center w-full">Contact</a>
+                <div class="px-3 py-2 w-full">
+                    <button class="bg-teal-600 text-white w-full max-w-[200px] mx-auto px-4 py-1.5 text-sm rounded-md hover:bg-teal-700 font-poppins block">
+                        <a href="assets/cv/Stefan_Trajkovski_CV.pdf" download class="inline-block w-full h-full">Download CV</a>
+                    </button>
+                </div>
             </div>
         </div>
     </nav>

@@ -20,7 +20,7 @@
     <nav class="fixed w-full bg-[#F8F7F1] shadow-sm z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <div class="text-2xl font-bold text-teal-700 font-poppins">Stefan Trajkovski</div>
+                <div class="text-xl sm:text-2xl md:text-3xl font-bold text-teal-700 font-poppins">Stefan Trajkovski</div>
                 <div class="hidden md:flex space-x-20 font-poppins">
                     <a href="home.html" class="text-gray-600 relative group text-lg">
                         Home
@@ -42,100 +42,159 @@
                         <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 group-hover:w-1/2 transition-all duration-300 origin-center"></span>
                     </a>
                 </div>
-                <button class="bg-teal-600 text-white px-6 py-2 rounded-md hover:bg-teal-700 font-poppins">
-                    <a href="assets/cv/Stefan_Trajkovski_CV.pdf" download class="inline-block w-full h-full">Download CV</a>
-                </button>
+                <div class="flex items-center space-x-4">
+                    <button class="bg-teal-600 text-white px-4 py-1.5 text-sm rounded-md hover:bg-teal-700 font-poppins hidden md:block">
+                        <a href="assets/cv/Stefan_Trajkovski_CV.pdf" download class="inline-block w-full h-full">Download CV</a>
+                    </button>
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-900 focus:outline-none md:hidden">
+                        <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden transform transition-all duration-300 ease-in-out opacity-0 scale-95 bg-[#F8F7F1] shadow-lg absolute w-full">
+            <div class="px-2 pt-2 pb-3 space-y-3 flex flex-col items-center">
+                <a href="home.html" class="block px-3 py-2 text-gray-600 font-medium hover:text-gray-900 text-center w-full">Home</a>
+                <a href="services.html" class="block px-3 py-2 text-gray-600 font-medium hover:text-gray-900 text-center w-full">Services</a>
+                <a href="projects.html" class="block px-3 py-2 text-gray-600 font-medium hover:text-gray-900 text-center w-full">Projects</a>
+                <a href="contact.html" class="block px-3 py-2 text-gray-600 font-medium hover:text-gray-900 text-center w-full">Contact</a>
+                <div class="px-3 py-2 w-full">
+                    <button class="bg-teal-600 text-white w-full max-w-[200px] mx-auto px-4 py-1.5 text-sm rounded-md hover:bg-teal-700 font-poppins block">
+                        <a href="assets/cv/Stefan_Trajkovski_CV.pdf" download class="inline-block w-full h-full">Download CV</a>
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <main class="pt-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 relative">
-            <!-- Text content positioned absolutely -->
-            <div class="absolute top-32 left-8 z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-20 relative min-h-screen">
+            <!-- Text content -->
+            <div class="md:absolute md:top-32 md:left-8 z-20 text-center md:text-left mt-4 mb-12 md:mt-0 md:mb-0">
                 <div class="max-w-lg">
-                    <h2 class="text-4xl font-bubblegum mb-2">Hi! I Am</h2>
-                    <h1 class="text-4xl font-bold text-[#EDB33C] mb-4 font-poppins">Stefan Trajkovski</h1>
+                    <h2 class="text-3xl md:text-4xl font-bubblegum mb-2">Hi! I Am</h2>
+                    <h1 class="text-3xl md:text-4xl font-bold text-[#EDB33C] mb-4 font-poppins">Stefan Trajkovski</h1>
                 </div>
             </div>
 
-            <!-- Experience and social links -->
-            <div class="absolute top-[500px] left-8 z-10">
-                <div class="max-w-lg">
-                    <div class="mb-12 font-poppins ml-[30px] flex gap-4">
-                        <div class="text-4xl font-bold text-teal-700 pt-2">01</div>
-                        <div class="text-gray-600 text-lg">YEARS<br/>EXPERIENCE</div>
-                    </div>
-
-                    <div class="flex space-x-6 mt-[70px]">
-                        <a href="https://www.facebook.com/" class="text-gray-600 hover:text-amber-400">
-                            <div class="w-10 h-10 rounded-full flex items-center justify-center">
-                                <img src="assets/svg/social/facebook.svg" alt="Facebook" class="w-6 h-6">
-                            </div>
-                        </a>
-                        <a href="#" class="text-gray-600 hover:text-amber-400">
-                            <div class="w-10 h-10 rounded-full flex items-center justify-center">
-                                <img src="assets/svg/social/instagram.svg" alt="Instagram" class="w-6 h-6">
-                            </div>
-                        </a>
-                        <a href="#" class="text-gray-600 hover:text-amber-400">
-                            <div class="w-10 h-10 rounded-full flex items-center justify-center">
-                                <img src="assets/svg/social/twitter.svg" alt="Twitter" class="w-6 h-6">
-                            </div>
-                        </a>
-                        <a href="#" class="text-gray-600 hover:text-amber-400">
-                            <div class="w-10 h-10 rounded-full flex items-center justify-center">
-                                <img src="assets/svg/social/linkedin.svg" alt="LinkedIn" class="w-6 h-6">
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="absolute left-[150px] top-[200px] z-0">
-                <img src="assets/svg/decorative.svg" alt="Decorative Path" width="456" height="205">
+            <!-- Decorative SVG -->
+            <div class="absolute left-[150px] top-[200px] z-0 hidden md:block">
+                <img src="assets/svg/decorative.svg" alt="Decorative Path" class="w-full max-w-[456px] h-auto">
             </div>
 
             <!-- Centered image -->
-            <div class="flex justify-center items-center min-h-[calc(100vh-4rem)]">
+            <div class="flex justify-center items-center min-h-[calc(100vh-4rem)] -mt-20 md:mt-0 -translate-y-32 md:translate-y-0">
                 <div class="relative">
-                    <div class="w-[500px] h-[500px] rounded-full overflow-hidden">
+                    <div class="w-[320px] h-[320px] md:w-[500px] md:h-[500px] rounded-full overflow-hidden">
                         <img src="assets/images/Стефан Трајковски А23081.jpg" alt="Stefan Trajkovski" class="w-full h-full object-cover">
-                    </div>
-                    
-                    <!-- Reviews Box -->
-                    <div class="absolute top-[120px] right-[-390px] bg-white p-4 rounded-lg shadow-lg">
-                        <div class="flex items-center gap-2">
-                            <p class="text-base font-medium text-left text-[#0d2f3f]">12k Reviews On</p>
-                            <div class="flex text-yellow-400 text-2xl">
-                                ★★★★★
-                            </div>
-                        </div>
-                        <div class="flex gap-4">
-                            <div class="flex mt-2 space-x-1">
-                                <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-xs">
-                                    img
-                                </div>
-                                <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-xs">
-                                    img
-                                </div>
-                                <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-xs">
-                                    img
-                                </div>
-                                <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-xs">
-                                    img
-                                </div>
-                            </div>
-                            <div class="text-l font-bold text-teal-700 mt-[12px]">4.9</div>
-                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="absolute top-0 mt-[600px] right-8 text-right">
-                <h2 class="text-4xl font-bold text-gray-800">Software</h2>
-                <h3 class="text-2xl text-teal-600">Engineer</h3>
+            <!-- Mobile components container -->
+            <div class="md:hidden flex justify-between items-start px-8 -mt-52 gap-2 relative z-30">
+                <!-- Social links -->
+                <div class="flex space-x-4 pt-4">
+                    <a href="https://www.facebook.com/stefan.trajkovski.98" target="_blank" class="text-gray-600 hover:text-amber-400 transition-colors">
+                        <div class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-amber-50">
+                            <img src="assets/svg/social/facebook.svg" alt="Facebook" class="w-6 h-6">
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/trajkovski____/" target="_blank" class="text-gray-600 hover:text-amber-400 transition-colors">
+                        <div class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-amber-50">
+                            <img src="assets/svg/social/instagram.svg" alt="Instagram" class="w-6 h-6">
+                        </div>
+                    </a>
+                    <a href="#" target="_blank" class="text-gray-600 hover:text-amber-400 transition-colors">
+                        <div class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-amber-50">
+                            <img src="assets/svg/social/twitter.svg" alt="Twitter" class="w-6 h-6">
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/stefan-trajkovski-a60190341/" target="_blank" class="text-gray-600 hover:text-amber-400 transition-colors">
+                        <div class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-amber-50">
+                            <img src="assets/svg/social/linkedin.svg" alt="LinkedIn" class="w-6 h-6">
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Software Engineer Title -->
+                <div class="text-right">
+                    <h2 class="text-3xl font-bold text-gray-800">Software</h2>
+                    <h3 class="text-xl text-teal-600">Engineer</h3>
+                </div>
+            </div>
+
+            <!-- Desktop components (hidden on mobile) -->
+            <div class="hidden md:block">
+                <!-- Reviews Box -->
+                <div class="hidden md:block absolute top-[300px] right-[-1px] bg-white p-4 rounded-lg shadow-lg z-20">
+                    <div class="flex items-center gap-2">
+                        <p class="text-base font-medium text-left text-[#0d2f3f]">12k Reviews On</p>
+                        <div class="flex text-yellow-400 text-2xl">
+                            ★★★★★
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <div class="flex mt-2 space-x-1">
+                            <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-xs">
+                                img
+                            </div>
+                            <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-xs">
+                                img
+                            </div>
+                            <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-xs">
+                                img
+                            </div>
+                            <div class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center text-xs">
+                                img
+                            </div>
+                        </div>
+                        <div class="text-l font-bold text-teal-700 mt-[12px]">4.9</div>
+                    </div>
+                </div>
+
+                <!-- Experience and social links -->
+                <div class="absolute top-[500px] left-8 z-20">
+                    <div class="max-w-lg">
+                        <div class="mb-12 font-poppins ml-[30px] flex gap-4">
+                            <div class="text-4xl font-bold text-teal-700 pt-2">01</div>
+                            <div class="text-lg text-gray-600">YEARS<br/>EXPERIENCE</div>
+                        </div>
+
+                        <div class="flex space-x-6 mt-[70px]">
+                            <a href="https://www.facebook.com/stefan.trajkovski.98" target="_blank" class="text-gray-600 hover:text-amber-400 transition-colors">
+                                <div class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-amber-50">
+                                    <img src="assets/svg/social/facebook.svg" alt="Facebook" class="w-6 h-6">
+                                </div>
+                            </a>
+                            <a href="https://www.instagram.com/trajkovski____/" target="_blank" class="text-gray-600 hover:text-amber-400 transition-colors">
+                                <div class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-amber-50">
+                                    <img src="assets/svg/social/instagram.svg" alt="Instagram" class="w-6 h-6">
+                                </div>
+                            </a>
+                            <a href="#" target="_blank" class="text-gray-600 hover:text-amber-400 transition-colors">
+                                <div class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-amber-50">
+                                    <img src="assets/svg/social/twitter.svg" alt="Twitter" class="w-6 h-6">
+                                </div>
+                            </a>
+                            <a href="https://www.linkedin.com/in/stefan-trajkovski-a60190341/" target="_blank" class="text-gray-600 hover:text-amber-400 transition-colors">
+                                <div class="w-10 h-10 rounded-full flex items-center justify-center hover:bg-amber-50">
+                                    <img src="assets/svg/social/linkedin.svg" alt="LinkedIn" class="w-6 h-6">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Software Engineer Title -->
+                <div class="absolute top-0 mt-[600px] right-8 text-right">
+                    <h2 class="text-4xl font-bold text-gray-800">Software</h2>
+                    <h3 class="text-2xl text-teal-600">Engineer</h3>
+                </div>
             </div>
         </div>
     </main>
