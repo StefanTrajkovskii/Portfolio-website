@@ -38,9 +38,10 @@
                         <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 group-hover:w-1/2 transition-all duration-300 origin-center"></span>
                         <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 group-hover:w-1/2 transition-all duration-300 origin-center"></span>
                     </a>
-                    <a href="contact.html" class="text-gray-600 hover:text-gray-900 relative group text-lg">
+                    <a href="contact.html" class="text-gray-900 relative group text-lg">
                         Contact
-                        <span class="absolute bottom-0 left-0 w-full h-0.5 bg-teal-600"></span>
+                        <span class="absolute bottom-0 left-1/2 w-1/2 h-0.5 bg-teal-600 transition-all duration-300 origin-center"></span>
+                        <span class="absolute bottom-0 right-1/2 w-1/2 h-0.5 bg-teal-600 transition-all duration-300 origin-center"></span>
                     </a>
                 </div>
                 <div class="flex items-center space-x-4">
@@ -133,22 +134,22 @@
                     <form id="contact-form" class="space-y-6">
                         <div>
                             <label class="block text-gray-700 text-sm font-semibold mb-2" for="name">Your Name</label>
-                            <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500" 
+                            <input placeholder="John Doe" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500" 
                                 id="name" type="text" required>
                         </div>
                         <div>
                             <label class="block text-gray-700 text-sm font-semibold mb-2" for="email">Your Email</label>
-                            <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500" 
+                            <input placeholder="john.doe@example.com" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500" 
                                 id="email" type="email" required>
                         </div>
                         <div>
                             <label class="block text-gray-700 text-sm font-semibold mb-2" for="subject">Subject</label>
-                            <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500" 
+                            <input placeholder="Subject" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500" 
                                 id="subject" type="text" required>
                         </div>
                         <div>
                             <label class="block text-gray-700 text-sm font-semibold mb-2" for="message">Message</label>
-                            <textarea class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500" 
+                            <textarea placeholder="Message" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-teal-500" 
                                 id="message" rows="4" required></textarea>
                         </div>
                         
