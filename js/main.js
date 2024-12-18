@@ -21,6 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     mobileMenu.classList.remove('opacity-0', 'scale-95');
                     mobileMenu.classList.add('opacity-100', 'scale-100');
                 }, 10);
+                // Add X animation class
+                mobileMenuButton.classList.add('mobile-menu-open');
             } else {
                 // Reverse animation
                 mobileMenu.classList.remove('opacity-100', 'scale-100');
@@ -29,6 +31,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 setTimeout(() => {
                     mobileMenu.classList.add('hidden');
                 }, 300);
+                // Remove X animation class
+                mobileMenuButton.classList.remove('mobile-menu-open');
             }
         });
 
@@ -42,6 +46,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 setTimeout(() => {
                     mobileMenu.classList.add('hidden');
                 }, 300);
+                // Remove X animation class
+                mobileMenuButton.classList.remove('mobile-menu-open');
             }
         });
 
@@ -49,13 +55,13 @@ document.addEventListener('DOMContentLoaded', function() {
         const mobileMenuLinks = mobileMenu.querySelectorAll('a');
         mobileMenuLinks.forEach(link => {
             link.addEventListener('click', () => {
-                // Reverse animation
                 mobileMenu.classList.remove('opacity-100', 'scale-100');
                 mobileMenu.classList.add('opacity-0', 'scale-95');
-                // Hide menu after animation
                 setTimeout(() => {
                     mobileMenu.classList.add('hidden');
                 }, 300);
+                // Remove X animation class
+                mobileMenuButton.classList.remove('mobile-menu-open');
             });
         });
     }

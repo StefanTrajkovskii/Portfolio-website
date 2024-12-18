@@ -70,6 +70,27 @@
             0%, 100% { opacity: 1; }
             50% { opacity: 0; }
         }
+        /* Hamburger menu styles */
+        .hamburger-line {
+            width: 24px;
+            height: 2px;
+            background-color: #0d9488;
+            margin: 3px 0;
+            transition: all 0.3s ease;
+        }
+        
+        /* X animation classes */
+        .mobile-menu-open .hamburger-line:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+        
+        .mobile-menu-open .hamburger-line:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .mobile-menu-open .hamburger-line:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
     </style>
 </head>
 <body class="bg-[#F8F7F1] overflow-x-hidden w-screen">
@@ -104,10 +125,11 @@
                     <button class="bg-teal-600 text-white px-4 py-1.5 text-sm rounded-md hover:bg-teal-700 font-poppins hidden md:block">
                         <a href="assets/cv/Stefan_Trajkovski_CV.pdf" download class="inline-block w-full h-full">Download CV</a>
                     </button>
-                    <button id="mobile-menu-button" class="text-gray-600 hover:text-gray-900 focus:outline-none md:hidden">
-                        <svg class="h-8 w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                        </svg>
+                    <!-- Mobile menu button -->
+                    <button id="mobile-menu-button" class="md:hidden flex flex-col justify-center items-center w-8 h-8 relative">
+                        <span class="hamburger-line transform transition-transform duration-300"></span>
+                        <span class="hamburger-line transform transition-transform duration-300"></span>
+                        <span class="hamburger-line transform transition-transform duration-300"></span>
                     </button>
                 </div>
             </div>
@@ -280,6 +302,7 @@
                     mobileMenu.classList.remove('opacity-0', 'scale-95');
                     mobileMenu.classList.add('opacity-100', 'scale-100');
                 }, 10);
+                mobileMenuButton.classList.add('mobile-menu-open');
             } else {
                 // Close menu
                 mobileMenu.classList.remove('opacity-100', 'scale-100');
@@ -288,6 +311,7 @@
                 setTimeout(() => {
                     mobileMenu.classList.add('hidden');
                 }, 300);
+                mobileMenuButton.classList.remove('mobile-menu-open');
             }
         });
 
@@ -301,6 +325,7 @@
                 setTimeout(() => {
                     mobileMenu.classList.add('hidden');
                 }, 300);
+                mobileMenuButton.classList.remove('mobile-menu-open');
             }
         });
 
@@ -310,6 +335,7 @@
                 isMenuOpen = false;
                 mobileMenu.classList.add('hidden', 'opacity-0', 'scale-95');
                 mobileMenu.classList.remove('opacity-100', 'scale-100');
+                mobileMenuButton.classList.remove('mobile-menu-open');
             }
         });
     </script>
