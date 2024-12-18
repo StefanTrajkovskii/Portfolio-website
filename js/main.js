@@ -1,5 +1,11 @@
 // Mobile menu functionality
 document.addEventListener('DOMContentLoaded', function() {
+    // Initialize typing animation
+    const typingElement = document.querySelector('.typing-animation');
+    if (typingElement) {
+        typingElement.style.display = 'inline-block';
+    }
+
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
 
