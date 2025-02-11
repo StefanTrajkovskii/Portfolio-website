@@ -38,51 +38,51 @@
 <body class="bg-[#F8F7F1] overflow-x-hidden">
     <!-- Navbar -->
     <nav class="fixed w-full bg-[#F8F7F1] shadow-sm z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <a href="index.html" class="text-xl sm:text-2xl md:text-3xl font-bold text-teal-700 font-poppins">Stefan Trajkovski</a>
-                <div class="hidden md:flex space-x-20 font-poppins">
-                    <a href="index.html" class="text-gray-600 hover:text-gray-900 relative group text-lg">
+                <a href="index.html" class="text-xl font-bold text-teal-700 sm:text-2xl md:text-3xl font-poppins">Stefan Trajkovski</a>
+                <div class="hidden space-x-20 md:flex font-poppins">
+                    <a href="index.html" class="relative text-lg text-gray-600 hover:text-gray-900 group">
                         Home
-                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 group-hover:w-1/2 transition-all duration-300 origin-center"></span>
-                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 group-hover:w-1/2 transition-all duration-300 origin-center"></span>
+                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
                     </a>
-                    <a href="services.html" class="text-gray-600 hover:text-gray-900 relative group text-lg">
+                    <a href="services.html" class="relative text-lg text-gray-600 hover:text-gray-900 group">
                         Services
-                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 group-hover:w-1/2 transition-all duration-300 origin-center"></span>
-                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 group-hover:w-1/2 transition-all duration-300 origin-center"></span>
+                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
                     </a>
-                    <a href="projects.html" class="text-gray-900 relative group text-lg">
+                    <a href="projects.html" class="relative text-lg text-gray-900 group">
                         Projects
                         <span class="absolute bottom-0 left-1/2 w-1/2 h-0.5 bg-teal-600 transition-all duration-300 origin-center"></span>
                         <span class="absolute bottom-0 right-1/2 w-1/2 h-0.5 bg-teal-600 transition-all duration-300 origin-center"></span>
                     </a>
-                    <a href="contact.html" class="text-gray-600 hover:text-gray-900 relative group text-lg">
+                    <a href="contact.html" class="relative text-lg text-gray-600 hover:text-gray-900 group">
                         Contact
-                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 group-hover:w-1/2 transition-all duration-300 origin-center"></span>
-                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 group-hover:w-1/2 transition-all duration-300 origin-center"></span>
+                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
                     </a>
                 </div>
                 <div class="flex items-center space-x-4">
-                    <button class="bg-teal-600 text-white px-4 py-1.5 text-sm rounded-md hover:bg-teal-700 font-poppins hidden md:block">
+                    <button class="hidden px-4 py-1.5 text-sm text-white bg-teal-600 rounded-md hover:bg-teal-700 font-poppins md:block">
                         <a href="assets/cv/Stefan_Trajkovski_CV.pdf" download class="inline-block w-full h-full">Download CV</a>
                     </button>
                     <!-- Mobile menu button -->
-                    <button id="mobile-menu-button" class="md:hidden flex flex-col justify-center items-center w-8 h-8">
-                        <span class="hamburger-line transform transition-transform duration-300"></span>
-                        <span class="hamburger-line transform transition-transform duration-300"></span>
-                        <span class="hamburger-line transform transition-transform duration-300"></span>
+                    <button id="mobile-menu-button" class="flex flex-col justify-center items-center w-8 h-8 md:hidden">
+                        <span class="transition-transform duration-300 transform hamburger-line"></span>
+                        <span class="transition-transform duration-300 transform hamburger-line"></span>
+                        <span class="transition-transform duration-300 transform hamburger-line"></span>
                     </button>
                 </div>
             </div>
         </div>
         <!-- Mobile menu -->
         <div id="mobile-menu" class="hidden transform transition-all duration-300 ease-in-out opacity-0 scale-95 bg-[#F8F7F1] shadow-lg absolute w-full">
-            <div class="px-2 pt-2 pb-3 space-y-3 flex flex-col items-center">
-                <a href="index.html" class="block px-3 py-2 text-gray-600 font-medium hover:text-gray-900 text-center w-full">Home</a>
-                <a href="services.html" class="block px-3 py-2 text-gray-600 font-medium hover:text-gray-900 text-center w-full">Services</a>
-                <a href="projects.html" class="block px-3 py-2 text-gray-600 font-medium hover:text-gray-900 text-center w-full">Projects</a>
-                <a href="contact.html" class="block px-3 py-2 text-gray-600 font-medium hover:text-gray-900 text-center w-full">Contact</a>
+            <div class="flex flex-col items-center px-2 pt-2 pb-3 space-y-3">
+                <a href="index.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 hover:text-gray-900">Home</a>
+                <a href="services.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 hover:text-gray-900">Services</a>
+                <a href="projects.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 hover:text-gray-900">Projects</a>
+                <a href="contact.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 hover:text-gray-900">Contact</a>
                 <div class="px-3 py-2 w-full">
                     <button class="bg-teal-600 text-white w-full max-w-[200px] mx-auto px-4 py-1.5 text-sm rounded-md hover:bg-teal-700 font-poppins block">
                         <a href="assets/cv/Stefan_Trajkovski_CV.pdf" download class="inline-block w-full h-full">Download CV</a>
@@ -94,125 +94,129 @@
 
     <!-- Projects Section -->
     <main class="pt-24">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <!-- Section Header -->
-            <div class="text-center mb-16">
-                <h1 class="text-4xl font-bold text-gray-800 mb-4">My Projects</h1>
+            <div class="mb-16 text-center">
+                <h1 class="mb-4 text-4xl font-bold text-gray-800">My Projects</h1>
                 <p class="text-xl text-gray-600">A collection of my recent work and contributions</p>
             </div>
 
             <!-- Project Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
                 <!-- Project Card 1 -->
-                <div class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="relative overflow-hidden">
-                        <img src="assets/projects/project1.jpg" alt="E-commerce Platform" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-300">
-                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                            <a href="/assets/projects/project1.html" class="bg-teal-600 text-white px-6 py-2 rounded-md hover:bg-teal-700">View Project</a>
+                <div class="overflow-hidden bg-white rounded-xl shadow-lg transition-all duration-300 transform group hover:shadow-2xl hover:-translate-y-2">
+                    <div class="overflow-hidden relative">
+                        <img src="assets/projects/project1.png" alt="Facial Recognition & Blurring" class="object-cover w-full h-64 transition-transform duration-300 transform group-hover:scale-110">
+                        <div class="flex absolute inset-0 justify-center items-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            <a href="https://github.com/StefanTrajkovskii/Face-Detection" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-6 py-2 text-white bg-[#24292e] rounded-md hover:bg-[#2c3137] transition-colors">
+                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                    <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+                                </svg>
+                                View on GitHub
+                            </a>
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">E-commerce Platform</h3>
-                        <p class="text-gray-600 mb-4">A full-stack e-commerce platform built with React and Node.js</p>
+                        <h3 class="mb-2 text-xl font-bold text-gray-800">Facial Recognition & Blurring</h3>
+                        <p class="mb-4 text-gray-600">A Python application that detects faces in real time, with the ability to automatically blur them for privacy protection and use codename for anonymity.</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">React</span>
-                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">Node.js</span>
-                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">MongoDB</span>
+                            <span class="px-3 py-1 text-sm text-teal-800 bg-teal-100 rounded-full">Python</span>
+                            <span class="px-3 py-1 text-sm text-teal-800 bg-teal-100 rounded-full">OpenCV</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project Card 2 -->
-                <div class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="relative overflow-hidden">
-                        <img src="assets/projects/project2.jpg" alt="Task Management App" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-300">
-                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                            <a href="/assets/projects/project2.html" class="bg-teal-600 text-white px-6 py-2 rounded-md hover:bg-teal-700">View Project</a>
+                <div class="overflow-hidden bg-white rounded-xl shadow-lg transition-all duration-300 transform group hover:shadow-2xl hover:-translate-y-2">
+                    <div class="overflow-hidden relative">
+                        <img src="assets/projects/project2.jpg" alt="Task Management App" class="object-cover w-full h-64 transition-transform duration-300 transform group-hover:scale-110">
+                        <div class="flex absolute inset-0 justify-center items-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            <a href="/assets/projects/project2.html" class="px-6 py-2 text-white bg-teal-600 rounded-md hover:bg-teal-700">View Project</a>
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Task Management App</h3>
-                        <p class="text-gray-600 mb-4">A collaborative task management application with real-time updates</p>
+                        <h3 class="mb-2 text-xl font-bold text-gray-800">Task Management App</h3>
+                        <p class="mb-4 text-gray-600">A collaborative task management application with real-time updates</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">Vue.js</span>
-                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">Firebase</span>
-                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">Tailwind CSS</span>
+                            <span class="px-3 py-1 text-sm text-teal-800 bg-teal-100 rounded-full">Vue.js</span>
+                            <span class="px-3 py-1 text-sm text-teal-800 bg-teal-100 rounded-full">Firebase</span>
+                            <span class="px-3 py-1 text-sm text-teal-800 bg-teal-100 rounded-full">Tailwind CSS</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project Card 3 -->
-                <div class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="relative overflow-hidden">
-                        <img src="assets/projects/project3.jpg" alt="AI Chat Application" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-300">
-                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                            <a href="/assets/projects/project3.html" class="bg-teal-600 text-white px-6 py-2 rounded-md hover:bg-teal-700">View Project</a>
+                <div class="overflow-hidden bg-white rounded-xl shadow-lg transition-all duration-300 transform group hover:shadow-2xl hover:-translate-y-2">
+                    <div class="overflow-hidden relative">
+                        <img src="assets/projects/project3.jpg" alt="AI Chat Application" class="object-cover w-full h-64 transition-transform duration-300 transform group-hover:scale-110">
+                        <div class="flex absolute inset-0 justify-center items-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            <a href="/assets/projects/project3.html" class="px-6 py-2 text-white bg-teal-600 rounded-md hover:bg-teal-700">View Project</a>
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">AI Chat Application</h3>
-                        <p class="text-gray-600 mb-4">An intelligent chatbot powered by machine learning algorithms</p>
+                        <h3 class="mb-2 text-xl font-bold text-gray-800">AI Chat Application</h3>
+                        <p class="mb-4 text-gray-600">An intelligent chatbot powered by machine learning algorithms</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">Python</span>
-                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">TensorFlow</span>
-                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">Flask</span>
+                            <span class="px-3 py-1 text-sm text-teal-800 bg-teal-100 rounded-full">Python</span>
+                            <span class="px-3 py-1 text-sm text-teal-800 bg-teal-100 rounded-full">TensorFlow</span>
+                            <span class="px-3 py-1 text-sm text-teal-800 bg-teal-100 rounded-full">Flask</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project Card 4 -->
-                <div class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="relative overflow-hidden">
-                        <img src="assets/projects/project4.jpg" alt="Fitness Tracking App" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-300">
-                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                            <a href="/assets/projects/project4.html" class="bg-teal-600 text-white px-6 py-2 rounded-md hover:bg-teal-700">View Project</a>
+                <div class="overflow-hidden bg-white rounded-xl shadow-lg transition-all duration-300 transform group hover:shadow-2xl hover:-translate-y-2">
+                    <div class="overflow-hidden relative">
+                        <img src="assets/projects/project4.jpg" alt="Fitness Tracking App" class="object-cover w-full h-64 transition-transform duration-300 transform group-hover:scale-110">
+                        <div class="flex absolute inset-0 justify-center items-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            <a href="/assets/projects/project4.html" class="px-6 py-2 text-white bg-teal-600 rounded-md hover:bg-teal-700">View Project</a>
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Fitness Tracking App</h3>
-                        <p class="text-gray-600 mb-4">A mobile app for tracking workouts and nutrition with data visualization</p>
+                        <h3 class="mb-2 text-xl font-bold text-gray-800">Fitness Tracking App</h3>
+                        <p class="mb-4 text-gray-600">A mobile app for tracking workouts and nutrition with data visualization</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">React Native</span>
-                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">GraphQL</span>
-                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">AWS</span>
+                            <span class="px-3 py-1 text-sm text-teal-800 bg-teal-100 rounded-full">React Native</span>
+                            <span class="px-3 py-1 text-sm text-teal-800 bg-teal-100 rounded-full">GraphQL</span>
+                            <span class="px-3 py-1 text-sm text-teal-800 bg-teal-100 rounded-full">AWS</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project Card 5 -->
-                <div class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="relative overflow-hidden">
-                        <img src="assets/projects/project5.jpg" alt="Weather Dashboard" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-300">
-                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                            <a href="/assets/projects/project5.html" class="bg-teal-600 text-white px-6 py-2 rounded-md hover:bg-teal-700">View Project</a>
+                <div class="overflow-hidden bg-white rounded-xl shadow-lg transition-all duration-300 transform group hover:shadow-2xl hover:-translate-y-2">
+                    <div class="overflow-hidden relative">
+                        <img src="assets/projects/project5.jpg" alt="Weather Dashboard" class="object-cover w-full h-64 transition-transform duration-300 transform group-hover:scale-110">
+                        <div class="flex absolute inset-0 justify-center items-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            <a href="/assets/projects/project5.html" class="px-6 py-2 text-white bg-teal-600 rounded-md hover:bg-teal-700">View Project</a>
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Weather Dashboard</h3>
-                        <p class="text-gray-600 mb-4">A weather forecasting application with interactive maps and charts</p>
+                        <h3 class="mb-2 text-xl font-bold text-gray-800">Weather Dashboard</h3>
+                        <p class="mb-4 text-gray-600">A weather forecasting application with interactive maps and charts</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">JavaScript</span>
-                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">D3.js</span>
-                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">OpenWeather API</span>
+                            <span class="px-3 py-1 text-sm text-teal-800 bg-teal-100 rounded-full">JavaScript</span>
+                            <span class="px-3 py-1 text-sm text-teal-800 bg-teal-100 rounded-full">D3.js</span>
+                            <span class="px-3 py-1 text-sm text-teal-800 bg-teal-100 rounded-full">OpenWeather API</span>
                         </div>
                     </div>
                 </div>
 
                 <!-- Project Card 6 -->
-                <div class="group bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="relative overflow-hidden">
-                        <img src="assets/projects/project6.jpg" alt="Social Media Dashboard" class="w-full h-64 object-cover transform group-hover:scale-110 transition-transform duration-300">
-                        <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                            <a href="/assets/projects/project6.html" class="bg-teal-600 text-white px-6 py-2 rounded-md hover:bg-teal-700">View Project</a>
+                <div class="overflow-hidden bg-white rounded-xl shadow-lg transition-all duration-300 transform group hover:shadow-2xl hover:-translate-y-2">
+                    <div class="overflow-hidden relative">
+                        <img src="assets/projects/project6.jpg" alt="Social Media Dashboard" class="object-cover w-full h-64 transition-transform duration-300 transform group-hover:scale-110">
+                        <div class="flex absolute inset-0 justify-center items-center bg-black bg-opacity-50 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                            <a href="/assets/projects/project6.html" class="px-6 py-2 text-white bg-teal-600 rounded-md hover:bg-teal-700">View Project</a>
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-2">Social Media Dashboard</h3>
-                        <p class="text-gray-600 mb-4">Analytics dashboard for social media management and monitoring</p>
+                        <h3 class="mb-2 text-xl font-bold text-gray-800">Social Media Dashboard</h3>
+                        <p class="mb-4 text-gray-600">Analytics dashboard for social media management and monitoring</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">Angular</span>
-                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">Express.js</span>
-                            <span class="px-3 py-1 bg-teal-100 text-teal-800 rounded-full text-sm">PostgreSQL</span>
+                            <span class="px-3 py-1 text-sm text-teal-800 bg-teal-100 rounded-full">Angular</span>
+                            <span class="px-3 py-1 text-sm text-teal-800 bg-teal-100 rounded-full">Express.js</span>
+                            <span class="px-3 py-1 text-sm text-teal-800 bg-teal-100 rounded-full">PostgreSQL</span>
                         </div>
                     </div>
                 </div>
@@ -220,17 +224,17 @@
         </div>
     </main>
 
-    <footer class="bg-gray-800 text-white py-8">
-        <div class="container mx-auto px-4 text-center">
-            <div class="flex justify-center space-x-6 mb-4">
-                <a href="https://github.com/StefanTrajkovskii" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300">
-                    <i class="fab fa-github text-2xl"></i>
+    <footer class="py-8 text-white bg-gray-800">
+        <div class="container px-4 mx-auto text-center">
+            <div class="flex justify-center mb-4 space-x-6">
+                <a href="https://github.com/StefanTrajkovskii" target="_blank" class="text-gray-400 transition-colors duration-300 hover:text-white">
+                    <i class="text-2xl fab fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/stefan-trajkovski-430b9830a/" target="_blank" class="text-gray-400 hover:text-white transition-colors duration-300">
-                    <i class="fab fa-linkedin text-2xl"></i>
+                <a href="https://www.linkedin.com/in/stefan-trajkovski-430b9830a/" target="_blank" class="text-gray-400 transition-colors duration-300 hover:text-white">
+                    <i class="text-2xl fab fa-linkedin"></i>
                 </a>
-                <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">
-                    <i class="fab fa-twitter text-2xl"></i>
+                <a href="#" class="text-gray-400 transition-colors duration-300 hover:text-white">
+                    <i class="text-2xl fab fa-twitter"></i>
                 </a>
             </div>
             <p class="text-gray-400"> 2024 Stefan Trajkovski. All rights reserved.</p>
