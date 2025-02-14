@@ -27,6 +27,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="tailwind.config.js"></script>
     <script src="js/typing-animation.js"></script>
+    <script src="js/theme-toggle.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
@@ -90,13 +91,15 @@
         }
         /* Hamburger menu styles */
         .hamburger-line {
-            width: 24px;
-            height: 2px;
+            width: 1.5rem;
+            height: 0.125rem;
+            margin-bottom: 0.375rem;
             background-color: #0d9488;
-            margin: 3px 0;
             transition: all 0.3s ease;
         }
-        
+        .dark .hamburger-line {
+            background-color: #992800;
+        }
         /* X animation classes */
         .mobile-menu-open .hamburger-line:nth-child(1) {
             transform: translateY(8px) rotate(45deg);
@@ -109,38 +112,45 @@
         .mobile-menu-open .hamburger-line:nth-child(3) {
             transform: translateY(-8px) rotate(-45deg);
         }
+        /* Add transition for dark mode */
+        * {
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .hamburger-line {
+            @apply w-6 h-0.5 bg-gray-600 dark:bg-[#992800] mb-1.5;
+        }
     </style>
 </head>
-<body class="bg-[#F8F7F1] overflow-x-hidden w-screen">
+<body class="bg-[#F8F7F1] dark:bg-[#292929] overflow-x-hidden w-screen">
     <!-- Navbar -->
-    <nav class="fixed w-full bg-[#F8F7F1] shadow-sm z-50">
+    <nav class="fixed w-full bg-[#F8F7F1] dark:bg-[#292929] shadow-sm z-50">
         <div class="overflow-x-hidden px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <a href="index.html" class="text-xl font-bold text-teal-700 sm:text-2xl md:text-3xl font-poppins">Stefan Trajkovski</a>
+                <a href="index.html" class="text-xl font-bold text-teal-700 dark:text-[#992800] sm:text-2xl md:text-3xl font-poppins">Stefan Trajkovski</a>
                 <div class="hidden space-x-20 md:flex font-poppins">
-                    <a href="index.html" class="relative text-lg text-gray-900 group">
+                    <a href="index.html" class="relative text-lg text-gray-900 dark:text-white group">
                         Home
-                        <span class="absolute bottom-0 left-1/2 w-1/2 h-0.5 bg-teal-600 transition-all duration-300 origin-center"></span>
-                        <span class="absolute bottom-0 right-1/2 w-1/2 h-0.5 bg-teal-600 transition-all duration-300 origin-center"></span>
+                        <span class="absolute bottom-0 left-1/2 w-1/2 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center"></span>
+                        <span class="absolute bottom-0 right-1/2 w-1/2 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center"></span>
                     </a>
-                    <a href="services.html" class="relative text-lg text-gray-600 hover:text-gray-900 group">
+                    <a href="services.html" class="relative text-lg text-gray-600 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 group">
                         Services
-                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
-                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
                     </a>
-                    <a href="projects.html" class="relative text-lg text-gray-600 hover:text-gray-900 group">
+                    <a href="projects.html" class="relative text-lg text-gray-600 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 group">
                         Projects
-                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
-                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
                     </a>
-                    <a href="contact.html" class="relative text-lg text-gray-600 hover:text-gray-900 group">
+                    <a href="contact.html" class="relative text-lg text-gray-600 dark:text-white hover:text-gray-900 dark:hover:text-gray-300 group">
                         Contact
-                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
-                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
                     </a>
                 </div>
                 <div class="flex items-center space-x-4">
-                    <button class="hidden px-4 py-1.5 text-sm text-white bg-teal-600 rounded-md hover:bg-teal-700 font-poppins md:block">
+                    <button class="hidden px-4 py-1.5 text-sm text-white bg-teal-600 dark:bg-[#992800] rounded-md hover:bg-teal-700 dark:hover:bg-[#7a2000] font-poppins md:block transition-all duration-300">
                         <a href="assets/cv/Stefan_Trajkovski_CV.pdf" download class="inline-block w-full h-full">Download CV</a>
                     </button>
                     <!-- Mobile menu button -->
@@ -149,19 +159,30 @@
                         <span class="transition-transform duration-300 transform hamburger-line"></span>
                         <span class="transition-transform duration-300 transform hamburger-line"></span>
                     </button>
+                    <!-- Add theme toggle button -->
+                    <button onclick="toggleTheme()" class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700">
+                        <!-- Sun icon for dark mode -->
+                        <svg class="hidden w-6 h-6 text-yellow-500 dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                        <!-- Moon icon for light mode -->
+                        <svg class="block w-6 h-6 text-gray-800 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
         <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden transform transition-all duration-300 ease-in-out opacity-0 scale-95 bg-[#F8F7F1] shadow-lg absolute w-full">
+        <div id="mobile-menu" class="hidden transform transition-all duration-300 ease-in-out opacity-0 scale-95 bg-[#F8F7F1] dark:bg-[#292929] shadow-lg absolute w-full">
             <div class="flex flex-col items-center px-2 pt-2 pb-3 space-y-3">
-                <a href="index.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 whitespace-nowrap hover:text-gray-900">Home</a>
-                <a href="services.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 whitespace-nowrap hover:text-gray-900">Services</a>
-                <a href="projects.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 whitespace-nowrap hover:text-gray-900">Projects</a>
-                <a href="contact.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 whitespace-nowrap hover:text-gray-900">Contact</a>
+                <a href="index.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 dark:text-white whitespace-nowrap hover:text-gray-900 dark:hover:text-gray-300">Home</a>
+                <a href="services.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 dark:text-white whitespace-nowrap hover:text-gray-900 dark:hover:text-gray-300">Services</a>
+                <a href="projects.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 dark:text-white whitespace-nowrap hover:text-gray-900 dark:hover:text-gray-300">Projects</a>
+                <a href="contact.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 dark:text-white whitespace-nowrap hover:text-gray-900 dark:hover:text-gray-300">Contact</a>
                 <div class="px-3 py-2 w-full">
-                    <button class="bg-teal-600 text-white w-full max-w-[200px] mx-auto px-4 py-1.5 text-sm rounded-md hover:bg-teal-700 font-poppins block whitespace-nowrap">
-                        <a href="assets/cv/Stefan_Trajkovski_CV.pdf" download class="inline-block w-full h-full">Download CV</a>
+                    <button class="bg-teal-600 dark:bg-[#992800] text-white w-full max-w-[200px] mx-auto px-4 py-1.5 text-sm rounded-md hover:bg-teal-700 dark:hover:bg-[#7a2000] font-poppins block whitespace-nowrap transition-all duration-300">
+                        <a href="assets/cv/Stefan_Trajkovski_CV.pdf" download class="inline-block w-full">Download CV</a>
                     </button>
                 </div>
             </div>
@@ -182,7 +203,7 @@
                         <div class="absolute top-10 left-20 w-72 h-72 bg-pink-100 rounded-full opacity-70 mix-blend-multiply filter blur-xl animate-blob animation-delay-4000"></div>
 
                         <!-- Main Content -->
-                        <div class="relative p-12 rounded-3xl shadow-2xl backdrop-blur-lg bg-white/80 md:p-20">
+                        <div class="relative p-12 rounded-3xl shadow-2xl backdrop-blur-lg bg-white/80 dark:bg-[#292929]/90 dark:text-white md:p-20">
                             <div class="grid gap-12 items-center md:grid-cols-2">
                                 <!-- Text Content -->
                                 <div class="space-y-8">
@@ -194,8 +215,8 @@
                                         </div>
                                     </h1>
                                     <div class="space-y-4">
-                                        <p class="text-xl text-gray-600 md:text-2xl">Full Stack Developer</p>
-                                        <p class="text-gray-600">Transforming ideas into digital solutions with modern web technologies.</p>
+                                        <p class="text-xl text-gray-600 dark:text-gray-300 md:text-2xl">Full Stack Developer</p>
+                                        <p class="text-gray-600 dark:text-gray-400">Transforming ideas into digital solutions with modern web technologies.</p>
                                     </div>
                                     <div class="flex flex-row gap-4 justify-center md:justify-start">
                                         <a href="projects.html" class="inline-flex items-center px-3 py-2 text-white bg-teal-600 rounded-full transition-all duration-300 group md:px-6 md:py-3 hover:bg-teal-700">
@@ -206,7 +227,7 @@
                                         </a>
                                         <a href="contact.html" class="inline-flex gap-2 items-center px-6 py-2 text-teal-600 rounded-full border-2 border-teal-600 transition-all duration-300 group md:px-8 md:py-3 hover:bg-teal-600 hover:text-white">
                                             <span class="text-sm whitespace-nowrap md:text-base">Contact Me</span>
-                                            <svg class="w-4 h-4 transition-all duration-300 md:w-5 md:h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <svg class="w-4 h-4 transition-all duration-300 md:w-5 md:h-5" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                                             </svg>
                                         </a>
@@ -235,37 +256,37 @@
 
             <!-- Skills Section -->
             <div class="py-20">
-                <h3 class="mb-12 text-2xl font-bold text-center text-gray-800 md:text-3xl">Technologies I Work With</h3>
+                <h3 class="mb-12 text-2xl font-bold text-center text-gray-800 dark:text-white md:text-3xl">Technologies I Work With</h3>
                 <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-                    <div class="p-6 text-center bg-white rounded-xl shadow-lg transition-shadow duration-300 hover:shadow-xl">
+                    <div class="p-6 text-center bg-white dark:bg-[#292929] rounded-xl shadow-lg transition-shadow duration-300 hover:shadow-xl">
                         <img src="assets/svg/html5-logo.svg" alt="HTML5 logo" class="mx-auto mb-4 w-12 h-12">
                         <h4 class="font-semibold">HTML5</h4>
                     </div>
-                    <div class="p-6 text-center bg-white rounded-xl shadow-lg transition-shadow duration-300 hover:shadow-xl">
+                    <div class="p-6 text-center bg-white dark:bg-[#292929] rounded-xl shadow-lg transition-shadow duration-300 hover:shadow-xl">
                         <img src="assets/svg/css3-logo.svg" alt="CSS3 logo" class="mx-auto mb-4 w-12 h-12">
                         <h4 class="font-semibold">CSS3</h4>
                     </div>
-                    <div class="p-6 text-center bg-white rounded-xl shadow-lg transition-shadow duration-300 hover:shadow-xl">
+                    <div class="p-6 text-center bg-white dark:bg-[#292929] rounded-xl shadow-lg transition-shadow duration-300 hover:shadow-xl">
                         <img src="assets/svg/javascript-logo.svg" alt="JavaScript logo" class="mx-auto mb-4 w-12 h-12">
                         <h4 class="font-semibold">JavaScript</h4>
                     </div>
-                    <div class="p-6 text-center bg-white rounded-xl shadow-lg transition-shadow duration-300 hover:shadow-xl">
+                    <div class="p-6 text-center bg-white dark:bg-[#292929] rounded-xl shadow-lg transition-shadow duration-300 hover:shadow-xl">
                         <img src="assets/svg/react-logo.svg" alt="React logo" class="mx-auto mb-4 w-12 h-12">
                         <h4 class="font-semibold">React</h4>
                     </div>
-                    <div class="p-6 text-center bg-white rounded-xl shadow-lg transition-shadow duration-300 hover:shadow-xl">
-                        <i class="mb-4 text-4xl text-gray-700 fas fa-code"></i>
+                    <div class="p-6 text-center bg-white dark:bg-[#292929] rounded-xl shadow-lg transition-shadow duration-300 hover:shadow-xl">
+                        <i class="mb-4 text-4xl text-gray-700 dark:text-gray-300 fas fa-code"></i>
                         <h4 class="font-semibold">API Development</h4>
                     </div>
-                    <div class="p-6 text-center bg-white rounded-xl shadow-lg transition-shadow duration-300 hover:shadow-xl">
-                        <i class="mb-4 text-4xl text-blue-500 fas fa-database"></i>
+                    <div class="p-6 text-center bg-white dark:bg-[#292929] rounded-xl shadow-lg transition-shadow duration-300 hover:shadow-xl">
+                        <i class="mb-4 text-4xl text-blue-500 dark:text-blue-400 fas fa-database"></i>
                         <h4 class="font-semibold">MySQL</h4>
                     </div>
-                    <div class="p-6 text-center bg-white rounded-xl shadow-lg transition-shadow duration-300 hover:shadow-xl">
+                    <div class="p-6 text-center bg-white dark:bg-[#292929] rounded-xl shadow-lg transition-shadow duration-300 hover:shadow-xl">
                         <img src="assets/svg/php-logo.svg" alt="PHP logo" class="mx-auto mb-4 w-12 h-12">
                         <h4 class="font-semibold">PHP/Laravel</h4>
                     </div>
-                    <div class="p-6 text-center bg-white rounded-xl shadow-lg transition-shadow duration-300 hover:shadow-xl">
+                    <div class="p-6 text-center bg-white dark:bg-[#292929] rounded-xl shadow-lg transition-shadow duration-300 hover:shadow-xl">
                         <img src="assets/svg/python-logo.svg" alt="Python logo" class="mx-auto mb-4 w-12 h-12">
                         <h4 class="font-semibold">Python</h4>
                     </div>
@@ -275,7 +296,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="py-8 text-white bg-gray-800">
+    <footer class="py-8 text-white bg-gray-800 dark:bg-[#292929]">
         <div class="container px-4 mx-auto text-center">
             <div class="flex justify-center mb-4 space-x-6">
                 <a href="https://github.com/StefanTrajkovskii" target="_blank" class="text-gray-400 transition-colors duration-300 hover:text-white">
