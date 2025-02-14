@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+    <!-- Background -->
+    <rect width="1200" height="630" fill="#0d9488"/>
+    
+    <!-- ST Text -->
+    <text x="600" y="315" font-family="Arial, sans-serif" font-size="200" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">ST</text>
+    
+    <!-- Portfolio Text -->
+    <text x="600" y="450" font-family="Arial, sans-serif" font-size="60" font-weight="normal" fill="white" text-anchor="middle">Portfolio</text>
+</svg>
