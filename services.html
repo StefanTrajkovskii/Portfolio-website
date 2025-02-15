@@ -1,38 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Services - Stefan Trajkovski">
-    <meta property="og:description" content="Discover the web development and software engineering services I offer.">
-    <meta property="og:image" content="https://portfolio-website-eosin-rho.vercel.app/assets/ST_shared_link.png">
-    <meta property="og:url" content="https://portfolio-website-eosin-rho.vercel.app/services">
+    
+    <!-- Primary Meta Tags -->
+    <title>Stefan Trajkovski - Services</title>
+    <meta name="description" content="Stefan Trajkovski - Portfolio Website">
+    
+    <!-- Essential Meta Tags -->
+    <meta name="description" content="Stefan Trajkovski - Portfolio Website">
+    
+    <!-- Open Graph / Facebook / Instagram -->
     <meta property="og:type" content="website">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <title>Services - Stefan Trajkovski</title>
+    <meta property="og:site_name" content="Stefan Trajkovski Portfolio">
+    <meta property="og:title" content="Stefan Trajkovski">
+    <meta property="og:description" content="Portfolio Website">
+    <meta property="og:image" content="https://portfolio-website-eosin-rho.vercel.app/assets/ST_shared_link.png">
+    <meta property="og:image:secure_url" content="https://portfolio-website-eosin-rho.vercel.app/assets/ST_shared_link.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:url" content="https://portfolio-website-eosin-rho.vercel.app">
+    
     <link rel="icon" type="image/png" href="assets/ST_Logo_Initials.png" sizes="48x48">
+    
     <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="tailwind.config.js"></script>
+    <script src="js/theme-toggle.js"></script>
+    <script src="js/mobile-menu.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
+            background-color: #F8F7F1;
         }
-        .service-card:hover {
-            transform: translateY(-5px);
-            transition: transform 0.3s ease;
+        .dark body {
+            background-color: #292929;
+        }
+        .gradient-text {
+            background: linear-gradient(120deg, #0d9488, #0f766e);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .dark .gradient-text {
+            background: none;
+            color: #e4e2dd;
+            -webkit-text-fill-color: #e4e2dd;
+        }
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        .animation-delay-2000 {
+            animation-delay: 2s;
+        }
+        .animation-delay-4000 {
+            animation-delay: 4s;
         }
         /* Hamburger menu styles */
         .hamburger-line {
-            width: 24px;
-            height: 2px;
+            width: 1.5rem;
+            height: 0.125rem;
+            margin-bottom: 0.375rem;
             background-color: #0d9488;
-            margin: 3px 0;
             transition: all 0.3s ease;
         }
-        
+        .dark .hamburger-line {
+            background-color: #992800;
+        }
         /* X animation classes */
         .mobile-menu-open .hamburger-line:nth-child(1) {
             transform: translateY(8px) rotate(45deg);
@@ -45,62 +85,74 @@
         .mobile-menu-open .hamburger-line:nth-child(3) {
             transform: translateY(-8px) rotate(-45deg);
         }
+        /* Add transition for dark mode */
+        * {
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
     </style>
-    <script src="js/main.js" defer></script>
 </head>
-<body class="bg-[#F8F7F1] overflow-x-hidden">
+<body class="overflow-x-hidden w-screen">
     <!-- Navbar -->
-    <nav class="fixed w-full bg-[#F8F7F1] shadow-sm z-50">
-        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <nav class="fixed w-full bg-[#F8F7F1] dark:bg-[#292929] shadow-sm z-50">
+        <div class="overflow-x-hidden px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <div class="text-xl font-bold text-teal-700 sm:text-2xl md:text-3xl font-poppins">
-                    <a href="index.html">Stefan Trajkovski</a>
-                </div>
+                <a href="index.html" class="text-xl font-bold text-teal-700 dark:text-[#992800] sm:text-2xl md:text-3xl font-poppins">Stefan Trajkovski</a>
                 <div class="hidden space-x-20 md:flex font-poppins">
-                    <a href="index.html" class="relative text-lg text-gray-600 hover:text-gray-900 group">
+                    <a href="index.html" class="relative text-lg text-gray-600 dark:text-[#e4e2dd] hover:text-gray-900 dark:hover:text-gray-300 group">
                         Home
-                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
-                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
                     </a>
-                    <a href="services.html" class="relative text-lg text-gray-600 hover:text-gray-900 group">
+                    <a href="services.html" class="relative text-lg text-gray-900 dark:text-[#e4e2dd] group">
                         Services
-                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
-                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 left-1/2 w-1/2 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center"></span>
+                        <span class="absolute bottom-0 right-1/2 w-1/2 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center"></span>
                     </a>
-                    <a href="projects.html" class="relative text-lg text-gray-600 hover:text-gray-900 group">
+                    <a href="projects.html" class="relative text-lg text-gray-600 dark:text-[#e4e2dd] hover:text-gray-900 dark:hover:text-gray-300 group">
                         Projects
-                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
-                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
                     </a>
-                    <a href="contact.html" class="relative text-lg text-gray-600 hover:text-gray-900 group">
+                    <a href="contact.html" class="relative text-lg text-gray-600 dark:text-[#e4e2dd] hover:text-gray-900 dark:hover:text-gray-300 group">
                         Contact
-                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
-                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
                     </a>
                 </div>
                 <div class="flex items-center space-x-4">
-                    <button class="hidden px-4 py-1.5 text-sm text-white bg-teal-600 rounded-md hover:bg-teal-700 font-poppins md:block">
+                    <button class="hidden px-4 py-1.5 text-sm text-white bg-teal-600 dark:bg-[#992800] rounded-md hover:bg-teal-700 dark:hover:bg-[#7a2000] font-poppins md:block transition-all duration-300">
                         <a href="assets/cv/Stefan_Trajkovski_CV.pdf" download class="inline-block w-full h-full">Download CV</a>
                     </button>
                     <!-- Mobile menu button -->
-                    <button id="mobile-menu-button" class="flex flex-col justify-center items-center w-8 h-8 md:hidden">
+                    <button id="mobile-menu-button" class="flex relative flex-col justify-center items-center w-8 h-8 md:hidden">
                         <span class="transition-transform duration-300 transform hamburger-line"></span>
                         <span class="transition-transform duration-300 transform hamburger-line"></span>
                         <span class="transition-transform duration-300 transform hamburger-line"></span>
+                    </button>
+                    <!-- Add theme toggle button -->
+                    <button onclick="toggleTheme()" class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700">
+                        <!-- Sun icon for dark mode -->
+                        <svg class="hidden w-6 h-6 text-yellow-500 dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                        <!-- Moon icon for light mode -->
+                        <svg class="block w-6 h-6 text-gray-800 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                        </svg>
                     </button>
                 </div>
             </div>
         </div>
         <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden transform transition-all duration-300 ease-in-out opacity-0 scale-95 bg-[#F8F7F1] shadow-lg absolute w-full">
+        <div id="mobile-menu" class="hidden transform transition-all duration-300 ease-in-out opacity-0 scale-95 bg-[#F8F7F1] dark:bg-[#292929] shadow-lg absolute w-full">
             <div class="flex flex-col items-center px-2 pt-2 pb-3 space-y-3">
-                <a href="index.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 hover:text-gray-900">Home</a>
-                <a href="services.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 hover:text-gray-900">Services</a>
-                <a href="projects.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 hover:text-gray-900">Projects</a>
-                <a href="contact.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 hover:text-gray-900">Contact</a>
+                <a href="index.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 whitespace-nowrap dark:text-white hover:text-gray-900 dark:hover:text-gray-300">Home</a>
+                <a href="services.html" class="block px-3 py-2 w-full font-medium text-center text-gray-900 whitespace-nowrap dark:text-white">Services</a>
+                <a href="projects.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 whitespace-nowrap dark:text-white hover:text-gray-900 dark:hover:text-gray-300">Projects</a>
+                <a href="contact.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 whitespace-nowrap dark:text-white hover:text-gray-900 dark:hover:text-gray-300">Contact</a>
                 <div class="px-3 py-2 w-full">
-                    <button class="bg-teal-600 text-white w-full max-w-[200px] mx-auto px-4 py-1.5 text-sm rounded-md hover:bg-teal-700 font-poppins block">
-                        <a href="assets/cv/Stefan_Trajkovski_CV.pdf" download class="inline-block w-full h-full">Download CV</a>
+                    <button class="bg-teal-600 dark:bg-[#992800] text-white w-full max-w-[200px] mx-auto px-4 py-1.5 text-sm rounded-md hover:bg-teal-700 dark:hover:bg-[#7a2000] font-poppins block whitespace-nowrap transition-all duration-300">
+                        <a href="assets/cv/Stefan_Trajkovski_CV.pdf" download class="inline-block w-full">Download CV</a>
                     </button>
                 </div>
             </div>
@@ -112,86 +164,110 @@
         <div class="px-4 py-20 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <!-- Hero Section -->
             <div class="mb-16 text-center">
-                <h1 class="mb-4 text-4xl font-bold text-gray-800">My Services</h1>
-                <p class="text-xl text-gray-600">Bringing your digital vision to life with expertise and creativity</p>
+                <h1 class="mb-4 text-4xl font-bold text-gray-800 dark:text-[#e4e2dd]">My Services</h1>
+                <p class="text-xl text-gray-600 dark:text-[#e4e2dd]">Bringing your digital vision to life with expertise and creativity</p>
             </div>
 
             <!-- Services Section -->
             <div class="grid grid-cols-1 gap-8 mb-16 md:grid-cols-2 lg:grid-cols-3">
                 <!-- Web Development Card -->
-                <div class="p-8 bg-white rounded-lg shadow-lg service-card">
-                    <div class="mb-4 text-4xl text-teal-600">
-                        <i class="fas fa-code"></i>
+                <div class="p-8 bg-white dark:bg-[#363636] rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 border-t-4 border-teal-600 dark:border-[#3c7f72]">
+                    <div class="flex flex-col items-center">
+                        <div class="p-4 mb-6 rounded-full bg-gradient-to-br from-[#3c7f72]/20 to-[#3c7f72]/5">
+                            <i class="text-4xl text-[#3c7f72] fas fa-code"></i>
+                        </div>
+                        <h3 class="mb-4 text-2xl font-semibold text-center text-gray-800 dark:text-gray-300">Frontend Development</h3>
+                        <p class="mb-8 text-center text-gray-600 dark:text-[#9ca3af]">Creating responsive and modern web interfaces with clean, efficient, and maintainable code.</p>
+                        <div class="w-full space-y-3">
+                            <div class="flex items-center p-3 text-gray-600 dark:text-[#e4e2dd] rounded-lg bg-gradient-to-r from-[#3c7f72]/5 to-transparent border-l-2 border-[#3c7f72]">
+                                HTML5
+                            </div>
+                            <div class="flex items-center p-3 text-gray-600 dark:text-[#e4e2dd] rounded-lg bg-gradient-to-r from-[#3c7f72]/5 to-transparent border-l-2 border-[#3c7f72]">
+                                CSS/Tailwind CSS
+                            </div>
+                            <div class="flex items-center p-3 text-gray-600 dark:text-[#e4e2dd] rounded-lg bg-gradient-to-r from-[#3c7f72]/5 to-transparent border-l-2 border-[#3c7f72]">
+                                JavaScript/React
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="mb-4 text-2xl font-semibold text-gray-800">Frontend Development</h3>
-                    <p class="mb-4 text-gray-600">Creating responsive and modern web interfaces with clean, efficient, and maintainable code.</p>
-                    <ul class="space-y-2 text-gray-600">
-                        <li><i class="mr-2 text-teal-500 fas fa-check"></i>HTML5</li>
-                        <li><i class="mr-2 text-teal-500 fas fa-check"></i>CSS/Tailwind CSS</li>
-                        <li><i class="mr-2 text-teal-500 fas fa-check"></i>JavaScript</li>
-                    </ul>
                 </div>
 
                 <!-- Backend Development Card -->
-                <div class="p-8 bg-white rounded-lg shadow-lg service-card">
-                    <div class="mb-4 text-4xl text-teal-600">
-                        <i class="fas fa-server"></i>
+                <div class="p-8 bg-white dark:bg-[#363636] rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 border-t-4 border-teal-600 dark:border-[#992800]">
+                    <div class="flex flex-col items-center">
+                        <div class="p-4 mb-6 rounded-full bg-gradient-to-br from-[#992800]/20 to-[#992800]/5">
+                            <i class="text-4xl text-[#992800] fas fa-server"></i>
+                        </div>
+                        <h3 class="mb-4 text-2xl font-semibold text-center text-gray-800 dark:text-gray-300">Backend Development</h3>
+                        <p class="mb-8 text-center text-gray-600 dark:text-[#9ca3af]">Building robust server-side applications with PHP and Laravel, focusing on clean architecture and best practices.</p>
+                        <div class="w-full space-y-3">
+                            <div class="flex items-center p-3 text-gray-600 dark:text-[#e4e2dd] rounded-lg bg-gradient-to-r from-[#992800]/5 to-transparent border-l-2 border-[#992800]">
+                                PHP OOP
+                            </div>
+                            <div class="flex items-center p-3 text-gray-600 dark:text-[#e4e2dd] rounded-lg bg-gradient-to-r from-[#992800]/5 to-transparent border-l-2 border-[#992800]">
+                                Laravel Framework
+                            </div>
+                            <div class="flex items-center p-3 text-gray-600 dark:text-[#e4e2dd] rounded-lg bg-gradient-to-r from-[#992800]/5 to-transparent border-l-2 border-[#992800]">
+                                Database Management
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="mb-4 text-2xl font-semibold text-gray-800">Backend Development</h3>
-                    <p class="mb-4 text-gray-600">Building robust server-side applications with PHP and Laravel, focusing on clean architecture and best practices.</p>
-                    <ul class="space-y-2 text-gray-600">
-                        <li><i class="mr-2 text-teal-500 fas fa-check"></i>PHP OOP</li>
-                        <li><i class="mr-2 text-teal-500 fas fa-check"></i>Laravel Framework</li>
-                        <li><i class="mr-2 text-teal-500 fas fa-check"></i>Database Management</li>
-                    </ul>
                 </div>
 
-                <!-- Software Architecture Card -->
-                <div class="p-8 bg-white rounded-lg shadow-lg service-card">
-                    <div class="mb-4 text-4xl text-teal-600">
-                        <i class="fab fa-python"></i>
+                <!-- Python Development Card -->
+                <div class="p-8 bg-white dark:bg-[#363636] rounded-xl shadow-lg hover:shadow-2xl transform hover:-translate-y-1 transition-all duration-300 border-t-4 border-teal-600 dark:border-[#d34a24]">
+                    <div class="flex flex-col items-center">
+                        <div class="p-4 mb-6 rounded-full bg-gradient-to-br from-[#d34a24]/20 to-[#d34a24]/5">
+                            <i class="text-4xl text-[#d34a24] fab fa-python"></i>
+                        </div>
+                        <h3 class="mb-4 text-2xl font-semibold text-center text-gray-800 dark:text-gray-300">Python Development</h3>
+                        <p class="mb-8 text-center text-gray-600 dark:text-[#9ca3af]">Crafting efficient Python applications with various frameworks, focusing on clean code and scalable solutions.</p>
+                        <div class="w-full space-y-3">
+                            <div class="flex items-center p-3 text-gray-600 dark:text-[#e4e2dd] rounded-lg bg-gradient-to-r from-[#d34a24]/5 to-transparent border-l-2 border-[#d34a24]">
+                                Python Programming
+                            </div>
+                            <div class="flex items-center p-3 text-gray-600 dark:text-[#e4e2dd] rounded-lg bg-gradient-to-r from-[#d34a24]/5 to-transparent border-l-2 border-[#d34a24]">
+                                Django Framework
+                            </div>
+                            <div class="flex items-center p-3 text-gray-600 dark:text-[#e4e2dd] rounded-lg bg-gradient-to-r from-[#d34a24]/5 to-transparent border-l-2 border-[#d34a24]">
+                                Flask Framework
+                            </div>
+                        </div>
                     </div>
-                    <h3 class="mb-4 text-2xl font-semibold text-gray-800">Python Development</h3>
-                    <p class="mb-4 text-gray-600">Crafting efficient Python applications with various frameworks, focusing on clean code and scalable solutions.</p>
-                    <ul class="space-y-2 text-gray-600">
-                        <li><i class="mr-2 text-teal-500 fas fa-check"></i>Python Programming</li>
-                        <li><i class="mr-2 text-teal-500 fas fa-check"></i>Django Framework</li>
-                        <li><i class="mr-2 text-teal-500 fas fa-check"></i>Flask Framework</li>
-                    </ul>
                 </div>
             </div>
 
             <!-- Why Choose Me Section -->
-            <div class="p-12 mb-16 bg-white rounded-lg shadow-lg">
-                <h2 class="mb-12 text-3xl font-bold text-center text-teal-700">Why Choose Me?</h2>
+            <div class="p-12 mb-16 bg-white dark:bg-[#363636] rounded-lg shadow-lg">
+                <h2 class="mb-12 text-3xl font-bold text-center text-teal-700 dark:text-[#e4e2dd]">Why Choose Me?</h2>
                 <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
                     <div class="text-center">
-                        <div class="flex justify-center items-center mx-auto mb-4 w-16 h-16 text-white bg-teal-600 rounded-full">
-                            <i class="text-2xl fas fa-clock"></i>
+                        <div class="flex justify-center items-center mx-auto mb-4 w-16 h-16 text-white bg-[#3c7f72] rounded-full">
+                            <i class="text-2xl fas fa-rocket"></i>
                         </div>
-                        <h3 class="mb-2 text-xl font-semibold text-gray-800">Fast Delivery</h3>
-                        <p class="text-gray-600">Quick turnaround without compromising quality</p>
+                        <h3 class="mb-2 text-xl font-semibold text-gray-800 dark:text-[#e4e2dd]">Fast Delivery</h3>
+                        <p class="text-gray-600 dark:text-[#9ca3af]">Quick turnaround without compromising quality</p>
                     </div>
                     <div class="text-center">
-                        <div class="flex justify-center items-center mx-auto mb-4 w-16 h-16 text-white bg-teal-600 rounded-full">
-                            <i class="text-2xl fas fa-star"></i>
+                        <div class="flex justify-center items-center mx-auto mb-4 w-16 h-16 text-white bg-[#992800] rounded-full">
+                            <i class="text-2xl fas fa-check-circle"></i>
                         </div>
-                        <h3 class="mb-2 text-xl font-semibold text-gray-800">Quality Work</h3>
-                        <p class="text-gray-600">Attention to detail and high-quality results</p>
+                        <h3 class="mb-2 text-xl font-semibold text-gray-800 dark:text-[#e4e2dd]">Quality Work</h3>
+                        <p class="text-gray-600 dark:text-[#9ca3af]">Attention to detail and high-quality results</p>
                     </div>
                     <div class="text-center">
-                        <div class="flex justify-center items-center mx-auto mb-4 w-16 h-16 text-white bg-teal-600 rounded-full">
+                        <div class="flex justify-center items-center mx-auto mb-4 w-16 h-16 text-white bg-[#d34a24] rounded-full">
                             <i class="text-2xl fas fa-comments"></i>
                         </div>
-                        <h3 class="mb-2 text-xl font-semibold text-gray-800">Communication</h3>
-                        <p class="text-gray-600">Clear and constant communication</p>
+                        <h3 class="mb-2 text-xl font-semibold text-gray-800 dark:text-[#e4e2dd]">Communication</h3>
+                        <p class="text-gray-600 dark:text-[#9ca3af]">Clear and constant communication</p>
                     </div>
                     <div class="text-center">
-                        <div class="flex justify-center items-center mx-auto mb-4 w-16 h-16 text-white bg-teal-600 rounded-full">
-                            <i class="text-2xl fas fa-sync"></i>
+                        <div class="flex justify-center items-center mx-auto mb-4 w-16 h-16 text-white bg-[#ffaf00] rounded-full">
+                            <i class="text-2xl fas fa-headset"></i>
                         </div>
-                        <h3 class="mb-2 text-xl font-semibold text-gray-800">Support</h3>
-                        <p class="text-gray-600">Ongoing support and maintenance</p>
+                        <h3 class="mb-2 text-xl font-semibold text-gray-800 dark:text-[#e4e2dd]">Support</h3>
+                        <p class="text-gray-600 dark:text-[#9ca3af]">Ongoing support and maintenance</p>
                     </div>
                 </div>
             </div>
@@ -205,7 +281,7 @@
         </div>
     </main>
 
-    <footer class="py-8 text-white bg-gray-800">
+    <footer class="py-8 text-white bg-gray-800 dark:bg-[#292929]">
         <div class="container px-4 mx-auto text-center">
             <div class="flex justify-center mb-4 space-x-6">
                 <a href="https://github.com/StefanTrajkovskii" target="_blank" class="text-gray-400 transition-colors duration-300 hover:text-white">
