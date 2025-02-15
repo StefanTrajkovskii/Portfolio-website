@@ -22,13 +22,15 @@
         }
         /* Hamburger menu styles */
         .hamburger-line {
-            width: 24px;
-            height: 2px;
+            width: 1.5rem;
+            height: 0.125rem;
+            margin-bottom: 0.375rem;
             background-color: #0d9488;
-            margin: 3px 0;
             transition: all 0.3s ease;
         }
-        
+        .dark .hamburger-line {
+            background-color: #992800;
+        }
         /* X animation classes */
         .mobile-menu-open .hamburger-line:nth-child(1) {
             transform: translateY(8px) rotate(45deg);
@@ -41,59 +43,93 @@
         .mobile-menu-open .hamburger-line:nth-child(3) {
             transform: translateY(-8px) rotate(-45deg);
         }
+
+        /* Smooth theme transition */
+        * {
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, fill 0.3s ease;
+        }
+
+        /* Exclude certain properties from transition */
+        .no-transition {
+            transition: none !important;
+        }
+
+        /* Mobile menu button animation */
+        .mobile-menu-open .hamburger-top {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+
+        .mobile-menu-open .hamburger-middle {
+            opacity: 0;
+        }
+
+        .mobile-menu-open .hamburger-bottom {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
     </style>
 </head>
-<body class="bg-[#F8F7F1] overflow-x-hidden">
+<body class="bg-[#F8F7F1] dark:bg-[#292929] overflow-x-hidden w-screen">
     <!-- Navbar -->
-    <nav class="fixed w-full bg-[#F8F7F1] shadow-sm z-50">
-        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <nav class="fixed w-full bg-[#F8F7F1] dark:bg-[#292929] shadow-sm z-50">
+        <div class="overflow-x-hidden px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <a href="index.html" class="text-xl font-bold text-teal-700 sm:text-2xl md:text-3xl font-poppins">Stefan Trajkovski</a>
+                <a href="index.html" class="text-xl font-bold text-teal-700 dark:text-[#992800] sm:text-2xl md:text-3xl font-poppins">Stefan Trajkovski</a>
                 <div class="hidden space-x-20 md:flex font-poppins">
-                    <a href="index.html" class="relative text-lg text-gray-600 hover:text-gray-900 group">
+                    <a href="index.html" class="relative text-lg text-gray-600 dark:text-[#e4e2dd] hover:text-gray-900 dark:hover:text-gray-300 group">
                         Home
-                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
-                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
                     </a>
-                    <a href="services.html" class="relative text-lg text-gray-600 hover:text-gray-900 group">
+                    <a href="services.html" class="relative text-lg text-gray-600 dark:text-[#e4e2dd] hover:text-gray-900 dark:hover:text-gray-300 group">
                         Services
-                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
-                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
                     </a>
-                    <a href="projects.html" class="relative text-lg text-gray-900 group">
+                    <a href="projects.html" class="relative text-lg text-gray-900 dark:text-[#e4e2dd] group">
                         Projects
-                        <span class="absolute bottom-0 left-1/2 w-1/2 h-0.5 bg-teal-600 transition-all duration-300 origin-center"></span>
-                        <span class="absolute bottom-0 right-1/2 w-1/2 h-0.5 bg-teal-600 transition-all duration-300 origin-center"></span>
+                        <span class="absolute bottom-0 left-1/2 w-1/2 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center"></span>
+                        <span class="absolute bottom-0 right-1/2 w-1/2 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center"></span>
                     </a>
-                    <a href="contact.html" class="relative text-lg text-gray-600 hover:text-gray-900 group">
+                    <a href="contact.html" class="relative text-lg text-gray-600 dark:text-[#e4e2dd] hover:text-gray-900 dark:hover:text-gray-300 group">
                         Contact
-                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
-                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transitio  n-all duration-300 origin-center group-hover:w-1/2"></span>
                     </a>
                 </div>
                 <div class="flex items-center space-x-4">
-                    <button class="hidden px-4 py-1.5 text-sm text-white bg-teal-600 rounded-md hover:bg-teal-700 font-poppins md:block">
+                    <button class="hidden px-4 py-1.5 text-sm text-white bg-teal-600 dark:bg-[#992800] rounded-md hover:bg-teal-700 dark:hover:bg-[#7a2000] font-poppins md:block transition-all duration-300">
                         <a href="assets/cv/Stefan_Trajkovski_CV.pdf" download class="inline-block w-full h-full">Download CV</a>
                     </button>
                     <!-- Mobile menu button -->
-                    <button id="mobile-menu-button" class="flex flex-col justify-center items-center w-8 h-8 md:hidden">
+                    <button id="mobile-menu-button" class="flex relative flex-col justify-center items-center w-8 h-8 md:hidden">
                         <span class="transition-transform duration-300 transform hamburger-line"></span>
                         <span class="transition-transform duration-300 transform hamburger-line"></span>
                         <span class="transition-transform duration-300 transform hamburger-line"></span>
+                    </button>
+                    <!-- Add theme toggle button -->
+                    <button onclick="toggleTheme()" class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700">
+                        <!-- Sun icon for dark mode -->
+                        <svg class="hidden w-6 h-6 text-yellow-500 dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                        <!-- Moon icon for light mode -->
+                        <svg class="block w-6 h-6 text-gray-800 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                        </svg>
                     </button>
                 </div>
             </div>
         </div>
         <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden transform transition-all duration-300 ease-in-out opacity-0 scale-95 bg-[#F8F7F1] shadow-lg absolute w-full">
+        <div id="mobile-menu" class="hidden transform transition-all duration-300 ease-in-out opacity-0 scale-95 bg-[#F8F7F1] dark:bg-[#292929] shadow-lg absolute w-full">
             <div class="flex flex-col items-center px-2 pt-2 pb-3 space-y-3">
-                <a href="index.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 hover:text-gray-900">Home</a>
-                <a href="services.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 hover:text-gray-900">Services</a>
-                <a href="projects.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 hover:text-gray-900">Projects</a>
-                <a href="contact.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 hover:text-gray-900">Contact</a>
+                <a href="index.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 whitespace-nowrap dark:text-white hover:text-gray-900 dark:hover:text-gray-300">Home</a>
+                <a href="services.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 whitespace-nowrap dark:text-white hover:text-gray-900 dark:hover:text-gray-300">Services</a>
+                <a href="projects.html" class="block px-3 py-2 w-full font-medium text-center text-gray-900 whitespace-nowrap dark:text-white">Projects</a>
+                <a href="contact.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 whitespace-nowrap dark:text-white hover:text-gray-900 dark:hover:text-gray-300">Contact</a>
                 <div class="px-3 py-2 w-full">
-                    <button class="bg-teal-600 text-white w-full max-w-[200px] mx-auto px-4 py-1.5 text-sm rounded-md hover:bg-teal-700 font-poppins block">
-                        <a href="assets/cv/Stefan_Trajkovski_CV.pdf" download class="inline-block w-full h-full">Download CV</a>
+                    <button class="bg-teal-600 dark:bg-[#992800] text-white w-full max-w-[200px] mx-auto px-4 py-1.5 text-sm rounded-md hover:bg-teal-700 dark:hover:bg-[#7a2000] font-poppins block whitespace-nowrap transition-all duration-300">
+                        <a href="assets/cv/Stefan_Trajkovski_CV.pdf" download class="inline-block w-full">Download CV</a>
                     </button>
                 </div>
             </div>
@@ -105,8 +141,8 @@
         <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <!-- Section Header -->
             <div class="mb-16 text-center">
-                <h1 class="mb-4 text-4xl font-bold text-gray-800">My Projects</h1>
-                <p class="text-xl text-gray-600">A collection of my recent work and contributions</p>
+                <h1 class="mb-4 text-4xl font-bold text-gray-800 dark:text-[#e4e2dd]">My Projects</h1>
+                <p class="text-xl text-gray-600 dark:text-[#e4e2dd]">A collection of my recent work and contributions</p>
             </div>
 
             <!-- Project Grid -->
@@ -249,6 +285,7 @@
         </div>
     </footer>
 
+    <script src="js/theme-toggle.js"></script>
     <script>
         // Mobile menu functionality
         const mobileMenuButton = document.getElementById('mobile-menu-button');
@@ -265,18 +302,16 @@
                     mobileMenu.classList.remove('opacity-0', 'scale-95');
                     mobileMenu.classList.add('opacity-100', 'scale-100');
                 }, 10);
-                // Add animation class to button
                 mobileMenuButton.classList.add('mobile-menu-open');
             } else {
                 // Close menu
                 mobileMenu.classList.remove('opacity-100', 'scale-100');
                 mobileMenu.classList.add('opacity-0', 'scale-95');
-                // Remove animation class from button
-                mobileMenuButton.classList.remove('mobile-menu-open');
                 // Wait for animation to finish before hiding
                 setTimeout(() => {
                     mobileMenu.classList.add('hidden');
                 }, 300);
+                mobileMenuButton.classList.remove('mobile-menu-open');
             }
         });
 
@@ -287,11 +322,10 @@
                 // Close menu with animation
                 mobileMenu.classList.remove('opacity-100', 'scale-100');
                 mobileMenu.classList.add('opacity-0', 'scale-95');
-                // Remove animation class from button
-                mobileMenuButton.classList.remove('mobile-menu-open');
                 setTimeout(() => {
                     mobileMenu.classList.add('hidden');
                 }, 300);
+                mobileMenuButton.classList.remove('mobile-menu-open');
             }
         });
 
@@ -301,7 +335,6 @@
                 isMenuOpen = false;
                 mobileMenu.classList.add('hidden', 'opacity-0', 'scale-95');
                 mobileMenu.classList.remove('opacity-100', 'scale-100');
-                // Remove animation class from button
                 mobileMenuButton.classList.remove('mobile-menu-open');
             }
         });
