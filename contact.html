@@ -132,9 +132,9 @@
                     <!-- Contact Details -->
                     <div class="space-y-6">
                         <div class="flex items-start space-x-4">
-                            <div class="flex flex-shrink-0 justify-center items-center w-12 h-12 bg-teal-100 rounded-lg">
-                                <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            <div class="flex-shrink-0">
+                                <svg class="w-6 h-6 text-teal-600 dark:text-[#992800] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                                 </svg>
                             </div>
                             <div>
@@ -143,10 +143,10 @@
                             </div>
                         </div>
                         <div class="flex items-start space-x-4">
-                            <div class="flex flex-shrink-0 justify-center items-center w-12 h-12 bg-teal-100 rounded-lg">
-                                <svg class="w-6 h-6 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            <div class="flex-shrink-0">
+                                <svg class="w-6 h-6 text-teal-600 dark:text-[#992800] transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                                 </svg>
                             </div>
                             <div>
@@ -160,16 +160,16 @@
                     <div class="mt-12">
                         <h3 class="mb-4 text-lg font-semibold text-gray-800 dark:text-white">Follow Me</h3>
                         <div class="flex space-x-4">
-                            <a href="https://www.facebook.com/stefan.trajkovski.98/" target="_blank" class="text-gray-400 transition-colors duration-300 hover:text-white">
+                            <a href="https://www.facebook.com/stefan.trajkovski.98/" target="_blank" class="text-gray-400 transition-colors duration-300 hover:text-[#1877f2]">
                                 <i class="text-2xl fab fa-facebook"></i>
                             </a>
-                            <a href="https://github.com/StefanTrajkovskii" target="_blank" class="text-gray-400 transition-colors duration-300 hover:text-white">
+                            <a href="https://github.com/StefanTrajkovskii" target="_blank" class="text-gray-400 transition-colors duration-300 hover:text-[#333333] dark:hover:text-[#e6edf3]">
                                 <i class="text-2xl fab fa-github"></i>
                             </a>
-                            <a href="https://www.instagram.com/trajkovski____/" target="_blank" class="text-gray-400 transition-colors duration-300 hover:text-white">
+                            <a href="https://www.instagram.com/trajkovski____/" target="_blank" class="text-gray-400 transition-colors duration-300 hover:text-[#E4405F]">
                                 <i class="text-2xl fab fa-instagram"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/stefan-trajkovski-430b9830a/" target="_blank" class="text-gray-400 transition-colors duration-300 hover:text-white">
+                            <a href="https://www.linkedin.com/in/stefan-trajkovski-430b9830a/" target="_blank" class="text-gray-400 transition-colors duration-300 hover:text-[#0A66C2]">
                                 <i class="text-2xl fab fa-linkedin"></i>
                             </a>
                         </div>
@@ -182,22 +182,26 @@
                     <form id="contact-form" class="space-y-6">
                         <div>
                             <label class="block mb-2 text-sm font-semibold text-gray-700 dark:text-white" for="name">Your Name</label>
-                            <input placeholder="John Doe" class="px-3 py-2 w-full rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500" 
+                            <input placeholder="John Doe" 
+                                class="px-3 py-2 w-full rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#1e1e1e] text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-500 dark:focus:ring-[#992800] transition-colors duration-300" 
                                 id="name" type="text" required>
                         </div>
                         <div>
                             <label class="block mb-2 text-sm font-semibold text-gray-700 dark:text-white" for="email">Your Email</label>
-                            <input placeholder="john.doe@example.com" class="px-3 py-2 w-full rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500" 
+                            <input placeholder="john.doe@example.com" 
+                                class="px-3 py-2 w-full rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#1e1e1e] text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-500 dark:focus:ring-[#992800] transition-colors duration-300" 
                                 id="email" type="email" required>
                         </div>
                         <div>
                             <label class="block mb-2 text-sm font-semibold text-gray-700 dark:text-white" for="subject">Subject</label>
-                            <input placeholder="Subject" class="px-3 py-2 w-full rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500" 
+                            <input placeholder="Subject" 
+                                class="px-3 py-2 w-full rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#1e1e1e] text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-500 dark:focus:ring-[#992800] transition-colors duration-300" 
                                 id="subject" type="text" required>
                         </div>
                         <div>
                             <label class="block mb-2 text-sm font-semibold text-gray-700 dark:text-white" for="message">Message</label>
-                            <textarea placeholder="Message" class="px-3 py-2 w-full rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500" 
+                            <textarea placeholder="Message" 
+                                class="px-3 py-2 w-full rounded-md border border-gray-300 dark:border-gray-600 bg-white dark:bg-[#1e1e1e] text-gray-900 dark:text-white placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-teal-500 dark:focus:ring-[#992800] transition-colors duration-300" 
                                 id="message" rows="4" required></textarea>
                         </div>
                         
@@ -214,7 +218,7 @@
                         </div>
 
                         <button type="submit" 
-                            class="px-6 py-3 w-full text-white bg-teal-600 rounded-md transition-colors duration-300 hover:bg-teal-700">
+                            class="px-6 py-2 text-white bg-teal-600 dark:bg-[#992800] rounded-md hover:bg-teal-700 dark:hover:bg-[#7a2000] focus:outline-none focus:ring-2 focus:ring-teal-500 dark:focus:ring-[#992800] transition-colors duration-300">
                             Send Message
                         </button>
                     </form>
