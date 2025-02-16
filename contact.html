@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden transition-colors duration-300">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="tailwind.config.js"></script>
+    <script src="js/theme-toggle.js"></script>
     <script src="js/main.js" defer></script>
     <style>
         body {
@@ -46,58 +47,69 @@
         }
     </style>
 </head>
-<body class="bg-[#F8F7F1] overflow-x-hidden">
+<body class="bg-[#F8F7F1] dark:bg-[#292929] overflow-x-hidden transition-colors duration-300">
 
     <!-- Navbar -->
-    <nav class="fixed w-full bg-[#F8F7F1] shadow-sm z-50">
-        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+    <nav class="fixed w-full bg-[#F8F7F1] dark:bg-[#292929] shadow-sm z-50 transition-colors duration-300">
+        <div class="overflow-x-hidden px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div class="flex justify-between items-center h-16">
-                <a href="index.html" class="text-xl font-bold text-teal-700 sm:text-2xl md:text-3xl font-poppins">Stefan Trajkovski</a>
+                <a href="index.html" class="text-xl font-bold text-teal-700 dark:text-[#992800] sm:text-2xl md:text-3xl font-poppins">Stefan Trajkovski</a>
                 <div class="hidden space-x-20 md:flex font-poppins">
-                    <a href="index.html" class="relative text-lg text-gray-600 group">
+                    <a href="index.html" class="relative text-lg text-gray-900 dark:text-[#e4e2dd] group">
                         Home
-                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
-                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
                     </a>
-                    <a href="services.html" class="relative text-lg text-gray-600 hover:text-gray-900 group">
+                    <a href="services.html" class="relative text-lg text-gray-600 dark:text-[#e4e2dd] hover:text-gray-900 dark:hover:text-gray-300 group">
                         Services
-                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
-                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
                     </a>
-                    <a href="projects.html" class="relative text-lg text-gray-600 hover:text-gray-900 group">
+                    <a href="projects.html" class="relative text-lg text-gray-600 dark:text-[#e4e2dd] hover:text-gray-900 dark:hover:text-gray-300 group">
                         Projects
-                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
-                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
                     </a>
-                    <a href="contact.html" class="relative text-lg text-gray-900 group">
+                    <a href="contact.html" class="relative text-lg text-gray-600 dark:text-[#e4e2dd] hover:text-gray-900 dark:hover:text-gray-300 group">
                         Contact
-                        <span class="absolute bottom-0 left-1/2 w-1/2 h-0.5 bg-teal-600 transition-all duration-300 origin-center"></span>
-                        <span class="absolute bottom-0 right-1/2 w-1/2 h-0.5 bg-teal-600 transition-all duration-300 origin-center"></span>
+                        <span class="absolute bottom-0 left-1/2 w-1/2 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center"></span>
+                        <span class="absolute bottom-0 right-1/2 w-1/2 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center"></span>
                     </a>
                 </div>
                 <div class="flex items-center space-x-4">
-                    <button class="hidden px-4 py-1.5 text-sm text-white bg-teal-600 rounded-md hover:bg-teal-700 font-poppins md:block">
+                    <button class="hidden px-4 py-1.5 text-sm text-white bg-teal-600 dark:bg-[#992800] rounded-md hover:bg-teal-700 dark:hover:bg-[#7a2000] font-poppins md:block transition-all duration-300">
                         <a href="assets/cv/Stefan_Trajkovski_CV.pdf" download class="inline-block w-full h-full">Download CV</a>
                     </button>
                     <!-- Mobile menu button -->
-                    <button id="mobile-menu-button" class="flex flex-col justify-center items-center w-8 h-8 md:hidden">
+                    <button id="mobile-menu-button" class="flex relative flex-col justify-center items-center w-8 h-8 md:hidden">
                         <span class="transition-transform duration-300 transform hamburger-line"></span>
                         <span class="transition-transform duration-300 transform hamburger-line"></span>
                         <span class="transition-transform duration-300 transform hamburger-line"></span>
+                    </button>
+                    <!-- Add theme toggle button -->
+                    <button onclick="toggleTheme()" class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700">
+                        <!-- Sun icon for dark mode -->
+                        <svg class="hidden w-6 h-6 text-yellow-500 dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                        <!-- Moon icon for light mode -->
+                        <svg class="block w-6 h-6 text-gray-800 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                        </svg>
                     </button>
                 </div>
             </div>
         </div>
         <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden transform transition-all duration-300 ease-in-out opacity-0 scale-95 bg-[#F8F7F1] shadow-lg absolute w-full">
+        <div id="mobile-menu" class="hidden transform transition-all duration-300 ease-in-out opacity-0 scale-95 bg-[#F8F7F1] dark:bg-[#292929] shadow-lg absolute w-full">
             <div class="flex flex-col items-center px-2 pt-2 pb-3 space-y-3">
-                <a href="index.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 hover:text-gray-900">Home</a>
-                <a href="services.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 hover:text-gray-900">Services</a>
-                <a href="projects.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 hover:text-gray-900">Projects</a>
-                <a href="contact.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 hover:text-gray-900">Contact</a>
+                <a href="index.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 whitespace-nowrap dark:text-white hover:text-gray-900 dark:hover:text-gray-300">Home</a>
+                <a href="services.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 whitespace-nowrap dark:text-white hover:text-gray-900 dark:hover:text-gray-300">Services</a>
+                <a href="projects.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 whitespace-nowrap dark:text-white hover:text-gray-900 dark:hover:text-gray-300">Projects</a>
+                <a href="contact.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 whitespace-nowrap dark:text-white hover:text-gray-900 dark:hover:text-gray-300">Contact</a>
                 <div class="px-3 py-2 w-full">
-                    <button class="bg-teal-600 text-white w-full max-w-[200px] mx-auto px-4 py-1.5 text-sm rounded-md hover:bg-teal-700 font-poppins block">
-                        <a href="assets/cv/Stefan_Trajkovski_CV.pdf" download class="inline-block w-full h-full">Download CV</a>
+                    <button class="bg-teal-600 dark:bg-[#992800] text-white w-full max-w-[200px] mx-auto px-4 py-1.5 text-sm rounded-md hover:bg-teal-700 dark:hover:bg-[#7a2000] font-poppins block whitespace-nowrap transition-all duration-300">
+                        <a href="assets/cv/Stefan_Trajkovski_CV.pdf" download class="inline-block w-full">Download CV</a>
                     </button>
                 </div>
             </div>
@@ -109,9 +121,9 @@
         <div class="px-4 py-12 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div class="grid gap-8 md:grid-cols-2">
                 <!-- Left Column - Contact Info -->
-                <div class="p-8 bg-white rounded-2xl shadow-lg">
-                    <h2 class="mb-6 text-3xl font-bold text-gray-800">Let's Connect</h2>
-                    <p class="mb-8 text-gray-600">I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+                <div class="p-8 bg-white dark:bg-[#363636] rounded-2xl shadow-lg transition-colors duration-300">
+                    <h2 class="mb-6 text-3xl font-bold text-gray-800 dark:text-white transition-colors duration-300">Let's Connect</h2>
+                    <p class="mb-8 text-gray-600 dark:text-gray-300 transition-colors duration-300">I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
                     
                     <!-- Contact Details -->
                     <div class="space-y-6">
@@ -122,8 +134,8 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="text-lg font-semibold text-gray-800">Email</h3>
-                                <p class="text-gray-600">s.trajkovski23@gmail.com</p>
+                                <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Email</h3>
+                                <p class="text-gray-600 dark:text-gray-300">s.trajkovski23@gmail.com</p>
                             </div>
                         </div>
                         <div class="flex items-start space-x-4">
@@ -134,53 +146,53 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="text-lg font-semibold text-gray-800">Location</h3>
-                                <p class="text-gray-600">Skopje, Macedonia</p>
+                                <h3 class="text-lg font-semibold text-gray-800 dark:text-white">Location</h3>
+                                <p class="text-gray-600 dark:text-gray-300">Skopje, Macedonia</p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Social Links -->
                     <div class="mt-12">
-                        <h3 class="mb-4 text-lg font-semibold text-gray-800">Follow Me</h3>
+                        <h3 class="mb-4 text-lg font-semibold text-gray-800 dark:text-white">Follow Me</h3>
                         <div class="flex space-x-4">
-                            <a href="https://www.facebook.com/stefan.trajkovski.98/" target="_blank" class="flex justify-center items-center w-12 h-12 bg-gray-100 rounded-lg transition-colors duration-300 hover:bg-teal-100">
-                                <i class="text-2xl text-gray-600 fab fa-facebook"></i>
+                            <a href="https://www.facebook.com/stefan.trajkovski.98/" target="_blank" class="text-gray-400 transition-colors duration-300 hover:text-white">
+                                <i class="text-2xl fab fa-facebook"></i>
                             </a>
-                            <a href="https://github.com/StefanTrajkovskii" target="_blank" class="flex justify-center items-center w-12 h-12 bg-gray-100 rounded-lg transition-colors duration-300 hover:bg-teal-100">
-                                <i class="text-2xl text-gray-600 fab fa-github"></i>
+                            <a href="https://github.com/StefanTrajkovskii" target="_blank" class="text-gray-400 transition-colors duration-300 hover:text-white">
+                                <i class="text-2xl fab fa-github"></i>
                             </a>
-                            <a href="https://www.instagram.com/trajkovski____/" target="_blank" class="flex justify-center items-center w-12 h-12 bg-gray-100 rounded-lg transition-colors duration-300 hover:bg-teal-100">
-                                <i class="text-2xl text-gray-600 fab fa-instagram"></i>
+                            <a href="https://www.instagram.com/trajkovski____/" target="_blank" class="text-gray-400 transition-colors duration-300 hover:text-white">
+                                <i class="text-2xl fab fa-instagram"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/stefan-trajkovski-430b9830a/" target="_blank" class="flex justify-center items-center w-12 h-12 bg-gray-100 rounded-lg transition-colors duration-300 hover:bg-teal-100">
-                                <i class="text-2xl text-gray-600 fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/stefan-trajkovski-430b9830a/" target="_blank" class="text-gray-400 transition-colors duration-300 hover:text-white">
+                                <i class="text-2xl fab fa-linkedin"></i>
                             </a>
                         </div>
                     </div>
                 </div>
 
                 <!-- Right Column - Contact Form -->
-                <div class="p-8 bg-white rounded-2xl shadow-lg">
-                    <h2 class="mb-6 text-3xl font-bold text-gray-800">Send Message</h2>
+                <div class="p-8 bg-white dark:bg-[#363636] rounded-2xl shadow-lg transition-colors duration-300">
+                    <h2 class="mb-6 text-3xl font-bold text-gray-800 dark:text-white transition-colors duration-300">Send Message</h2>
                     <form id="contact-form" class="space-y-6">
                         <div>
-                            <label class="block mb-2 text-sm font-semibold text-gray-700" for="name">Your Name</label>
+                            <label class="block mb-2 text-sm font-semibold text-gray-700 dark:text-white" for="name">Your Name</label>
                             <input placeholder="John Doe" class="px-3 py-2 w-full rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500" 
                                 id="name" type="text" required>
                         </div>
                         <div>
-                            <label class="block mb-2 text-sm font-semibold text-gray-700" for="email">Your Email</label>
+                            <label class="block mb-2 text-sm font-semibold text-gray-700 dark:text-white" for="email">Your Email</label>
                             <input placeholder="john.doe@example.com" class="px-3 py-2 w-full rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500" 
                                 id="email" type="email" required>
                         </div>
                         <div>
-                            <label class="block mb-2 text-sm font-semibold text-gray-700" for="subject">Subject</label>
+                            <label class="block mb-2 text-sm font-semibold text-gray-700 dark:text-white" for="subject">Subject</label>
                             <input placeholder="Subject" class="px-3 py-2 w-full rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500" 
                                 id="subject" type="text" required>
                         </div>
                         <div>
-                            <label class="block mb-2 text-sm font-semibold text-gray-700" for="message">Message</label>
+                            <label class="block mb-2 text-sm font-semibold text-gray-700 dark:text-white" for="message">Message</label>
                             <textarea placeholder="Message" class="px-3 py-2 w-full rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-teal-500" 
                                 id="message" rows="4" required></textarea>
                         </div>
@@ -206,8 +218,8 @@
             </div>
 
             <!-- Map Section -->
-            <div class="p-8 mt-12 bg-white rounded-2xl shadow-lg">
-                <h2 class="mb-6 text-2xl font-bold text-gray-800">Find Me Here</h2>
+            <div class="p-8 mt-12 bg-white dark:bg-[#363636] rounded-2xl shadow-lg transition-colors duration-300">
+                <h2 class="mb-6 text-2xl font-bold text-gray-800 dark:text-white transition-colors duration-300">Find Me Here</h2>
                 <div class="w-full h-96 bg-gray-100 rounded-lg">
                     <!-- Replace with actual map embed code -->
                     <iframe 
@@ -226,7 +238,7 @@
 
 
     <!--Footer-->
-    <footer class="py-8 text-white bg-gray-800">
+    <footer class="py-8 text-white bg-gray-800 dark:bg-[#292929] transition-colors duration-300">
         <div class="container px-4 mx-auto text-center">
             <div class="flex justify-center mb-4 space-x-6">
                 <a href="https://github.com/StefanTrajkovskii" target="_blank" class="text-gray-400 transition-colors duration-300 hover:text-white">
