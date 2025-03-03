@@ -237,7 +237,7 @@
             </div>
 
             <!-- Project Grid -->
-            <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div class="grid grid-cols-1 gap-8 md:grid-cols-2">
                 <!-- Weather App Project Card -->
                 <div class="project-card group relative overflow-hidden rounded-2xl bg-white dark:bg-[#1e1e1e] shadow-lg hover:shadow-xl transition-all duration-300 ease-out hover:-translate-y-2" data-category="web">
                     <!-- Image Container with Gradient Overlay -->
@@ -270,7 +270,7 @@
                     </div>
                 </div>
 
-                <!-- Project Card 1 -->
+                <!-- Face Detection Project Card -->
                 <div class="project-card group relative overflow-hidden rounded-2xl bg-white dark:bg-[#1e1e1e] shadow-lg hover:shadow-xl transition-all duration-300 ease-out hover:-translate-y-2" data-category="ai">
                     <!-- Image Container with Gradient Overlay -->
                     <div class="overflow-hidden relative h-64">
@@ -297,163 +297,47 @@
                     </div>
                 </div>
 
-                <!-- Project Card 2 -->
-                <div class="project-card group relative overflow-hidden rounded-2xl bg-white dark:bg-[#1e1e1e] shadow-lg hover:shadow-xl transition-all duration-300 ease-out hover:-translate-y-2" data-category="web">
+                <!-- Coming Soon Project Card 1 -->
+                <div class="project-card group relative overflow-hidden rounded-2xl bg-white/50 dark:bg-[#1e1e1e]/50 shadow-lg hover:shadow-xl transition-all duration-300 ease-out hover:-translate-y-2" data-category="web">
                     <!-- Image Container with Gradient Overlay -->
-                    <div class="overflow-hidden relative h-64">
+                    <div class="overflow-hidden relative h-64 bg-gray-200 dark:bg-gray-700">
                         <div class="absolute inset-0 z-10 bg-gradient-to-b from-transparent via-black/50 to-black/80"></div>
-                        <img src="assets/projects/project2.jpg" alt="E-commerce Platform" class="object-cover w-full h-full transition-transform duration-700 ease-out group-hover:scale-110" loading="lazy">
+                        <div class="flex absolute inset-0 justify-center items-center">
+                            <svg class="w-24 h-24 text-gray-400 dark:text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                            </svg>
+                        </div>
                         <!-- Tech Stack Tags -->
                         <div class="flex absolute bottom-4 left-4 z-20 flex-wrap gap-2">
-                            <span class="px-2 py-1 text-xs font-medium text-white bg-teal-600/80 dark:bg-[#992800]/80 rounded-full backdrop-blur-sm">React</span>
-                            <span class="px-2 py-1 text-xs font-medium text-white bg-teal-600/80 dark:bg-[#992800]/80 rounded-full backdrop-blur-sm">Node.js</span>
-                            <span class="px-2 py-1 text-xs font-medium text-white bg-teal-600/80 dark:bg-[#992800]/80 rounded-full backdrop-blur-sm">MongoDB</span>
+                            <span class="px-2 py-1 text-xs font-medium text-white bg-gray-500/80 rounded-full backdrop-blur-sm">Coming Soon</span>
                         </div>
                     </div>
                     <!-- Content -->
                     <div class="p-6">
-                        <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white group-hover:text-teal-600 dark:group-hover:text-[#992800] transition-colors duration-300">E-commerce Platform</h3>
-                        <p class="mb-4 text-gray-600 dark:text-gray-300">Full-featured e-commerce platform with secure payments, inventory management, and real-time order tracking.</p>
-                        <!-- Links -->
-                        <div class="flex items-center space-x-4">
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-medium text-teal-600 dark:text-[#992800] hover:text-teal-700 dark:hover:text-[#7a2000]">
-                                <span>Live Demo</span>
-                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                            </a>
-                            <span class="text-gray-300 dark:text-gray-600">|</span>
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-medium text-teal-600 dark:text-[#992800] hover:text-teal-700 dark:hover:text-[#7a2000]">
-                                <span>Source Code</span>
-                                <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
-                            </a>
-                        </div>
+                        <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white group-hover:text-teal-600 dark:group-hover:text-[#992800] transition-colors duration-300">Project In Development</h3>
+                        <p class="mb-4 text-gray-600 dark:text-gray-300">New exciting project coming soon. Stay tuned for updates!</p>
                     </div>
                 </div>
 
-                <!-- Project Card 3 -->
-                <div class="project-card group relative overflow-hidden rounded-2xl bg-white dark:bg-[#1e1e1e] shadow-lg hover:shadow-xl transition-all duration-300 ease-out hover:-translate-y-2" data-category="ai">
+                <!-- Coming Soon Project Card 2 -->
+                <div class="project-card group relative overflow-hidden rounded-2xl bg-white/50 dark:bg-[#1e1e1e]/50 shadow-lg hover:shadow-xl transition-all duration-300 ease-out hover:-translate-y-2" data-category="ai">
                     <!-- Image Container with Gradient Overlay -->
-                    <div class="overflow-hidden relative h-64">
+                    <div class="overflow-hidden relative h-64 bg-gray-200 dark:bg-gray-700">
                         <div class="absolute inset-0 z-10 bg-gradient-to-b from-transparent via-black/50 to-black/80"></div>
-                        <img src="assets/projects/project3.jpg" alt="AI Chatbot" class="object-cover w-full h-full transition-transform duration-700 ease-out group-hover:scale-110" loading="lazy">
+                        <div class="flex absolute inset-0 justify-center items-center">
+                            <svg class="w-24 h-24 text-gray-400 dark:text-gray-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                            </svg>
+                        </div>
                         <!-- Tech Stack Tags -->
                         <div class="flex absolute bottom-4 left-4 z-20 flex-wrap gap-2">
-                            <span class="px-2 py-1 text-xs font-medium text-white bg-teal-600/80 dark:bg-[#992800]/80 rounded-full backdrop-blur-sm">Python</span>
-                            <span class="px-2 py-1 text-xs font-medium text-white bg-teal-600/80 dark:bg-[#992800]/80 rounded-full backdrop-blur-sm">NLP</span>
-                            <span class="px-2 py-1 text-xs font-medium text-white bg-teal-600/80 dark:bg-[#992800]/80 rounded-full backdrop-blur-sm">Flask</span>
+                            <span class="px-2 py-1 text-xs font-medium text-white bg-gray-500/80 rounded-full backdrop-blur-sm">Coming Soon</span>
                         </div>
                     </div>
                     <!-- Content -->
                     <div class="p-6">
-                        <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white group-hover:text-teal-600 dark:group-hover:text-[#992800] transition-colors duration-300">AI Chatbot Assistant</h3>
-                        <p class="mb-4 text-gray-600 dark:text-gray-300">Intelligent chatbot using natural language processing to provide context-aware responses and assistance.</p>
-                        <!-- Links -->
-                        <div class="flex items-center space-x-4">
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-medium text-teal-600 dark:text-[#992800] hover:text-teal-700 dark:hover:text-[#7a2000]">
-                                <span>Live Demo</span>
-                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                            </a>
-                            <span class="text-gray-300 dark:text-gray-600">|</span>
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-medium text-teal-600 dark:text-[#992800] hover:text-teal-700 dark:hover:text-[#7a2000]">
-                                <span>Source Code</span>
-                                <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project Card 4 -->
-                <div class="project-card group relative overflow-hidden rounded-2xl bg-white dark:bg-[#1e1e1e] shadow-lg hover:shadow-xl transition-all duration-300 ease-out hover:-translate-y-2" data-category="mobile">
-                    <!-- Image Container with Gradient Overlay -->
-                    <div class="overflow-hidden relative h-64">
-                        <div class="absolute inset-0 z-10 bg-gradient-to-b from-transparent via-black/50 to-black/80"></div>
-                        <img src="assets/projects/project4.jpg" alt="Fitness Tracking App" class="object-cover w-full h-full transition-transform duration-700 ease-out group-hover:scale-110" loading="lazy">
-                        <!-- Tech Stack Tags -->
-                        <div class="flex absolute bottom-4 left-4 z-20 flex-wrap gap-2">
-                            <span class="px-2 py-1 text-xs font-medium text-white bg-teal-600/80 dark:bg-[#992800]/80 rounded-full backdrop-blur-sm">React Native</span>
-                            <span class="px-2 py-1 text-xs font-medium text-white bg-teal-600/80 dark:bg-[#992800]/80 rounded-full backdrop-blur-sm">Firebase</span>
-                            <span class="px-2 py-1 text-xs font-medium text-white bg-teal-600/80 dark:bg-[#992800]/80 rounded-full backdrop-blur-sm">Google Fit API</span>
-                        </div>
-                    </div>
-                    <!-- Content -->
-                    <div class="p-6">
-                        <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white group-hover:text-teal-600 dark:group-hover:text-[#992800] transition-colors duration-300">Fitness Tracking App</h3>
-                        <p class="mb-4 text-gray-600 dark:text-gray-300">Mobile app for tracking workouts and nutrition with data visualization and personalized recommendations.</p>
-                        <!-- Links -->
-                        <div class="flex items-center space-x-4">
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-medium text-teal-600 dark:text-[#992800] hover:text-teal-700 dark:hover:text-[#7a2000]">
-                                <span>Live Demo</span>
-                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                            </a>
-                            <span class="text-gray-300 dark:text-gray-600">|</span>
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-medium text-teal-600 dark:text-[#992800] hover:text-teal-700 dark:hover:text-[#7a2000]">
-                                <span>Source Code</span>
-                                <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project Card 5 -->
-                <div class="project-card group relative overflow-hidden rounded-2xl bg-white dark:bg-[#1e1e1e] shadow-lg hover:shadow-xl transition-all duration-300 ease-out hover:-translate-y-2" data-category="web">
-                    <!-- Image Container with Gradient Overlay -->
-                    <div class="overflow-hidden relative h-64">
-                        <div class="absolute inset-0 z-10 bg-gradient-to-b from-transparent via-black/50 to-black/80"></div>
-                        <img src="assets/projects/project5.jpg" alt="Weather Dashboard" class="object-cover w-full h-full transition-transform duration-700 ease-out group-hover:scale-110" loading="lazy">
-                        <!-- Tech Stack Tags -->
-                        <div class="flex absolute bottom-4 left-4 z-20 flex-wrap gap-2">
-                            <span class="px-2 py-1 text-xs font-medium text-white bg-teal-600/80 dark:bg-[#992800]/80 rounded-full backdrop-blur-sm">React</span>
-                            <span class="px-2 py-1 text-xs font-medium text-white bg-teal-600/80 dark:bg-[#992800]/80 rounded-full backdrop-blur-sm">D3.js</span>
-                            <span class="px-2 py-1 text-xs font-medium text-white bg-teal-600/80 dark:bg-[#992800]/80 rounded-full backdrop-blur-sm">OpenWeather API</span>
-                        </div>
-                    </div>
-                    <!-- Content -->
-                    <div class="p-6">
-                        <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white group-hover:text-teal-600 dark:group-hover:text-[#992800] transition-colors duration-300">Weather Dashboard</h3>
-                        <p class="mb-4 text-gray-600 dark:text-gray-300">Web-based weather forecasting application with interactive maps and charts.</p>
-                        <!-- Links -->
-                        <div class="flex items-center space-x-4">
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-medium text-teal-600 dark:text-[#992800] hover:text-teal-700 dark:hover:text-[#7a2000]">
-                                <span>Live Demo</span>
-                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                            </a>
-                            <span class="text-gray-300 dark:text-gray-600">|</span>
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-medium text-teal-600 dark:text-[#992800] hover:text-teal-700 dark:hover:text-[#7a2000]">
-                                <span>Source Code</span>
-                                <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Project Card 6 -->
-                <div class="project-card group relative overflow-hidden rounded-2xl bg-white dark:bg-[#1e1e1e] shadow-lg hover:shadow-xl transition-all duration-300 ease-out hover:-translate-y-2" data-category="web">
-                    <!-- Image Container with Gradient Overlay -->
-                    <div class="overflow-hidden relative h-64">
-                        <div class="absolute inset-0 z-10 bg-gradient-to-b from-transparent via-black/50 to-black/80"></div>
-                        <img src="assets/projects/project6.jpg" alt="Social Media Dashboard" class="object-cover w-full h-full transition-transform duration-700 ease-out group-hover:scale-110" loading="lazy">
-                        <!-- Tech Stack Tags -->
-                        <div class="flex absolute bottom-4 left-4 z-20 flex-wrap gap-2">
-                            <span class="px-2 py-1 text-xs font-medium text-white bg-teal-600/80 dark:bg-[#992800]/80 rounded-full backdrop-blur-sm">React</span>
-                            <span class="px-2 py-1 text-xs font-medium text-white bg-teal-600/80 dark:bg-[#992800]/80 rounded-full backdrop-blur-sm">D3.js</span>
-                            <span class="px-2 py-1 text-xs font-medium text-white bg-teal-600/80 dark:bg-[#992800]/80 rounded-full backdrop-blur-sm">Twitter API</span>
-                        </div>
-                    </div>
-                    <!-- Content -->
-                    <div class="p-6">
-                        <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white group-hover:text-teal-600 dark:group-hover:text-[#992800] transition-colors duration-300">Social Media Dashboard</h3>
-                        <p class="mb-4 text-gray-600 dark:text-gray-300">Web-based social media analytics dashboard for tracking engagement and performance metrics.</p>
-                        <!-- Links -->
-                        <div class="flex items-center space-x-4">
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-medium text-teal-600 dark:text-[#992800] hover:text-teal-700 dark:hover:text-[#7a2000]">
-                                <span>Live Demo</span>
-                                <svg class="ml-1 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
-                            </a>
-                            <span class="text-gray-300 dark:text-gray-600">|</span>
-                            <a href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-sm font-medium text-teal-600 dark:text-[#992800] hover:text-teal-700 dark:hover:text-[#7a2000]">
-                                <span>Source Code</span>
-                                <svg class="ml-1 w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path></svg>
-                            </a>
-                        </div>
+                        <h3 class="mb-2 text-xl font-bold text-gray-900 dark:text-white group-hover:text-teal-600 dark:group-hover:text-[#992800] transition-colors duration-300">Future Innovation</h3>
+                        <p class="mb-4 text-gray-600 dark:text-gray-300">Another exciting project in the pipeline. Check back later for more details!</p>
                     </div>
                 </div>
             </div>
