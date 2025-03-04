@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" class="overflow-x-hidden">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Stefan Trajkovski - Experience</title>
+    <meta name="description" content="Stefan Trajkovski - Portfolio Website">
+    
+    <!-- Essential Meta Tags -->
+    <meta name="description" content="Stefan Trajkovski - Portfolio Website">
+    
+    <!-- Open Graph / Facebook / Instagram -->
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Stefan Trajkovski Portfolio">
+    <meta property="og:title" content="Stefan Trajkovski">
+    <meta property="og:description" content="Portfolio Website">
+    <meta property="og:image" content="https://portfolio-website-eosin-rho.vercel.app/assets/ST_shared_link.png">
+    <meta property="og:image:secure_url" content="https://portfolio-website-eosin-rho.vercel.app/assets/ST_shared_link.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:url" content="https://portfolio-website-eosin-rho.vercel.app">
+    
+    <link rel="icon" type="image/png" href="assets/ST_Logo_Initials.png" sizes="48x48">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
+    <script src="js/theme-toggle.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .gradient-text {
+            background: linear-gradient(120deg, #0d9488, #0f766e);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .dark .gradient-text {
+            background: none;
+            color: #e4e2dd;
+            -webkit-text-fill-color: #e4e2dd;
+        }
+        /* Hamburger menu styles */
+        .hamburger-line {
+            width: 1.5rem;
+            height: 0.125rem;
+            margin-bottom: 0.375rem;
+            background-color: #0d9488;
+            transition: all 0.3s ease;
+        }
+        .dark .hamburger-line {
+            background-color: #992800;
+        }
+        /* X animation classes */
+        .mobile-menu-open .hamburger-line:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+        
+        .mobile-menu-open .hamburger-line:nth-child(2) {
+            opacity: 0;
+        }
+        
+        .mobile-menu-open .hamburger-line:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+        /* Add transition for dark mode */
+        * {
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-[#F8F7F1] dark:bg-[#292929] overflow-x-hidden w-screen">
+    <!-- Navbar -->
+    <nav class="fixed w-full bg-[#F8F7F1] dark:bg-[#292929] shadow-sm z-50">
+        <div class="overflow-x-hidden px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="text-xl font-bold text-teal-700 dark:text-[#992800] sm:text-2xl md:text-3xl font-poppins">Stefan Trajkovski</a>
+                <div class="hidden space-x-8 xl:space-x-20 md:flex font-poppins">
+                    <a href="index.html" class="relative text-lg text-gray-600 dark:text-[#e4e2dd] hover:text-gray-900 dark:hover:text-gray-300 group">
+                        Home
+                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                    </a>
+                    <a href="services.html" class="relative text-lg text-gray-600 dark:text-[#e4e2dd] hover:text-gray-900 dark:hover:text-gray-300 group">
+                        Services
+                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                    </a>
+                    <a href="projects.html" class="relative text-lg text-gray-600 dark:text-[#e4e2dd] hover:text-gray-900 dark:hover:text-gray-300 group">
+                        Projects
+                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                    </a>
+                    <a href="experience.html" class="relative text-lg text-gray-900 dark:text-[#e4e2dd] group">
+                        Experience
+                        <span class="absolute bottom-0 left-1/2 w-1/2 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center"></span>
+                        <span class="absolute bottom-0 right-1/2 w-1/2 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center"></span>
+                    </a>
+                    <a href="contact.html" class="relative text-lg text-gray-600 dark:text-[#e4e2dd] hover:text-gray-900 dark:hover:text-gray-300 group">
+                        Contact
+                        <span class="absolute bottom-0 left-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                        <span class="absolute bottom-0 right-1/2 w-0 h-0.5 bg-teal-600 dark:bg-[#992800] transition-all duration-300 origin-center group-hover:w-1/2"></span>
+                    </a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="hidden px-4 py-1.5 text-sm text-white bg-teal-600 dark:bg-[#992800] rounded-md hover:bg-teal-700 dark:hover:bg-[#7a2000] font-poppins md:block transition-all duration-300">
+                        <a href="assets/cv/CV_Stefan_Trajkovski.pdf" download class="inline-block w-full h-full">Download CV</a>
+                    </button>
+                    <!-- Mobile menu button -->
+                    <button id="mobile-menu-button" class="flex relative flex-col justify-center items-center w-8 h-8 md:hidden">
+                        <span class="transition-transform duration-300 transform hamburger-line"></span>
+                        <span class="transition-transform duration-300 transform hamburger-line"></span>
+                        <span class="transition-transform duration-300 transform hamburger-line"></span>
+                    </button>
+                    <!-- Add theme toggle button -->
+                    <button onclick="toggleTheme()" class="p-2 rounded-lg hover:bg-gray-200 dark:hover:bg-gray-700">
+                        <!-- Sun icon for dark mode -->
+                        <svg class="hidden w-6 h-6 text-yellow-500 dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                        <!-- Moon icon for light mode -->
+                        <svg class="block w-6 h-6 text-gray-800 dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden transform transition-all duration-300 ease-in-out opacity-0 scale-95 bg-[#F8F7F1] dark:bg-[#292929] shadow-lg absolute w-full">
+            <div class="flex flex-col items-center px-2 pt-2 pb-3 space-y-3">
+                <a href="index.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 whitespace-nowrap dark:text-white hover:text-gray-900 dark:hover:text-gray-300">Home</a>
+                <a href="services.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 whitespace-nowrap dark:text-white hover:text-gray-900 dark:hover:text-gray-300">Services</a>
+                <a href="projects.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 whitespace-nowrap dark:text-white hover:text-gray-900 dark:hover:text-gray-300">Projects</a>
+                <a href="experience.html" class="block px-3 py-2 w-full font-medium text-center text-gray-900 whitespace-nowrap dark:text-white">Experience</a>
+                <a href="contact.html" class="block px-3 py-2 w-full font-medium text-center text-gray-600 whitespace-nowrap dark:text-white hover:text-gray-900 dark:hover:text-gray-300">Contact</a>
+                <div class="px-3 py-2 w-full">
+                    <button class="bg-teal-600 dark:bg-[#992800] text-white w-full max-w-[200px] mx-auto px-4 py-1.5 text-sm rounded-md hover:bg-teal-700 dark:hover:bg-[#7a2000] font-poppins block whitespace-nowrap transition-all duration-300">
+                        <a href="assets/cv/CV_Stefan_Trajkovski.pdf" download class="inline-block w-full">Download CV</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-16">
+        <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+            <!-- Work Experience Section -->
+            <section class="py-16">
+                <h2 class="mb-12 text-3xl font-bold text-center text-gray-900 dark:text-white">Work Experience</h2>
+                <div class="p-8 mx-auto max-w-3xl bg-white dark:bg-[#363636] rounded-xl shadow-lg">
+                    <div class="mb-6">
+                        <h3 class="text-2xl font-semibold text-teal-600 dark:text-[#992800]">Fullstack Developer</h3>
+                        <p class="mt-2 text-gray-600 dark:text-gray-400">July 1, 2023 - October 30, 2023</p>
+                        <div class="mt-4">
+                            <p class="text-gray-700 dark:text-gray-300">
+                                Worked as a Fullstack Developer, contributing to various web development projects and gaining hands-on experience with both frontend and backend technologies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hackathons Section -->
+            <section class="py-16">
+                <h2 class="mb-12 text-3xl font-bold text-center text-gray-900 dark:text-white">Hackathon Participations</h2>
+                <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+                    <!-- Sava Osiguruvanje Hackathon -->
+                    <div class="p-6 bg-white dark:bg-[#363636] rounded-xl shadow-lg">
+                        <h3 class="mb-4 text-xl font-semibold text-teal-600 dark:text-[#992800]">Sava Osiguruvanje Hackathon</h3>
+                        <p class="mb-6 text-gray-700 dark:text-gray-300">
+                            Participated as a Frontend Developer using React. Worked on implementing a web application based on provided Figma designs within a 48-hour timeframe.
+                        </p>
+                        <img src="assets/certificates/Sava-osiguruvanje_certificate.webp" alt="Sava Osiguruvanje Certificate" class="w-full rounded-lg shadow-md">
+                    </div>
+
+                    <!-- Sparkasse Hackathon -->
+                    <div class="p-6 bg-white dark:bg-[#363636] rounded-xl shadow-lg">
+                        <h3 class="mb-4 text-xl font-semibold text-teal-600 dark:text-[#992800]">Sparkasse Hackathon</h3>
+                        <p class="mb-6 text-gray-700 dark:text-gray-300">
+                            Served as a Frontend Developer using React. Successfully delivered a web application following Figma designs in a 48-hour competition.
+                        </p>
+                        <img src="assets/certificates/Sparkasse_certificate.webp" alt="Sparkasse Certificate" class="w-full rounded-lg shadow-md">
+                    </div>
+
+                    <!-- Embassy of Holland Hackathon -->
+                    <div class="p-6 bg-white dark:bg-[#363636] rounded-xl shadow-lg">
+                        <h3 class="mb-4 text-xl font-semibold text-teal-600 dark:text-[#992800]">Embassy of Holland Hackathon</h3>
+                        <p class="mb-6 text-gray-700 dark:text-gray-300">
+                            Contributed as a Frontend Developer using React. Developed a web application based on Figma designs during the 48-hour hackathon.
+                        </p>
+                        <p class="italic text-gray-500 dark:text-gray-400">Certificate pending</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="py-8 text-white bg-gray-800 dark:bg-[#292929]">
+        <div class="container px-4 mx-auto text-center">
+            <div class="flex justify-center mb-4 space-x-6">
+                <a href="https://github.com/StefanTrajkovskii" target="_blank" class="text-gray-400 transition-colors duration-300 hover:text-white">
+                    <i class="text-2xl fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/stefan-trajkovski-430b9830a/" target="_blank" class="text-gray-400 transition-colors duration-300 hover:text-white">
+                    <i class="text-2xl fab fa-linkedin"></i>
+                </a>
+                <a href="#" class="text-gray-400 transition-colors duration-300 hover:text-white">
+                    <i class="text-2xl fab fa-twitter"></i>
+                </a>
+            </div>
+            <p class="text-gray-400">&copy; 2024 Stefan Trajkovski. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+    <script>
+        // Mobile menu functionality
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        let isMenuOpen = false;
+
+        mobileMenuButton.addEventListener('click', () => {
+            isMenuOpen = !isMenuOpen;
+            if (isMenuOpen) {
+                mobileMenu.classList.remove('hidden');
+                setTimeout(() => {
+                    mobileMenu.classList.remove('opacity-0', 'scale-95');
+                    mobileMenu.classList.add('opacity-100', 'scale-100');
+                }, 10);
+                mobileMenuButton.classList.add('mobile-menu-open');
+            } else {
+                mobileMenu.classList.remove('opacity-100', 'scale-100');
+                mobileMenu.classList.add('opacity-0', 'scale-95');
+                setTimeout(() => {
+                    mobileMenu.classList.add('hidden');
+                }, 300);
+                mobileMenuButton.classList.remove('mobile-menu-open');
+            }
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', (event) => {
+            if (isMenuOpen && !mobileMenu.contains(event.target) && !mobileMenuButton.contains(event.target)) {
+                isMenuOpen = false;
+                mobileMenu.classList.remove('opacity-100', 'scale-100');
+                mobileMenu.classList.add('opacity-0', 'scale-95');
+                setTimeout(() => {
+                    mobileMenu.classList.add('hidden');
+                }, 300);
+                mobileMenuButton.classList.remove('mobile-menu-open');
+            }
+        });
+
+        // Close menu when window is resized to desktop view
+        window.addEventListener('resize', () => {
+            if (window.innerWidth >= 768 && isMenuOpen) {
+                isMenuOpen = false;
+                mobileMenu.classList.add('hidden', 'opacity-0', 'scale-95');
+                mobileMenu.classList.remove('opacity-100', 'scale-100');
+                mobileMenuButton.classList.remove('mobile-menu-open');
+            }
+        });
+    </script>
+</body>
+</html>
